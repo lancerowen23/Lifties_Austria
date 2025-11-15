@@ -1,0 +1,2115 @@
+id,name,percent,abs
+10101,Eisenstadt,9.91,"1,598"
+10201,Rust,15.52,300
+10301,Breitenbrunn am Neusiedler See,16.62,323
+10302,Donnerskirchen,10.21,192
+10303,Großhöflein,8.57,178
+10304,Hornstein,11.10,369
+10305,Klingenbach,9.48,114
+10306,Leithaprodersdorf,8.82,111
+10307,Mörbisch am See,13.48,294
+10308,Müllendorf,9.01,137
+10309,Neufeld an der Leitha,11.32,407
+10310,Oggau am Neusiedler See,12.54,212
+10311,Oslip,10.58,138
+10312,Purbach am Neusiedler See,11.10,339
+10313,Sankt Margarethen im Burgenland,12.87,350
+10314,Schützen am Gebirge,11.46,166
+10315,Siegendorf,11.93,385
+10316,Steinbrunn,10.61,318
+10317,Trausdorf an der Wulka,12.65,271
+10318,Wimpassing an der Leitha,7.95,137
+10319,Wulkaprodersdorf,10.68,207
+10320,Loretto,11.54,60
+10321,Stotzing,10.23,84
+10322,Zillingtal,7.46,78
+10323,Zagersdorf,11.82,135
+10401,Bocksdorf,13.16,104
+10402,Burgauberg-Neudauberg,9.34,134
+10403,Eberau,15.71,143
+10404,Gerersdorf-Sulz,13.62,140
+10405,Güssing,15.60,549
+10406,Güttenbach,15.07,127
+10407,Heiligenbrunn,14.65,104
+10408,Kukmirn,13,258
+10409,Neuberg im Burgenland,10.60,100
+10410,Neustift bei Güssing,16.44,73
+10411,Olbendorf,11.77,173
+10412,Ollersdorf im Burgenland,11.31,108
+10413,Sankt Michael im Burgenland,13.41,135
+10414,Stegersbach,11.64,319
+10415,Stinatz,9.56,114
+10416,Strem,21.20,198
+10417,Tobaj,8.25,113
+10418,Hackerberg,8.36,32
+10419,Wörterberg,8.74,47
+10420,Großmürbisch,12.93,30
+10421,Inzenhof,10.42,35
+10422,Kleinmürbisch,12.78,29
+10423,Tschanigraben,10.94,7
+10424,Heugraben,13.73,32
+10425,Rohr im Burgenland,11.65,43
+10426,Bildein,13.07,46
+10427,Rauchwart,9.41,45
+10428,Moschendorf,15.11,55
+10501,Deutsch Kaltenbrunn,10.81,187
+10502,Eltendorf,13.78,124
+10503,Heiligenkreuz im Lafnitztal,13.45,167
+10504,Jennersdorf,11.64,484
+10505,Minihof-Liebau,10.37,108
+10506,Mogersdorf,10.75,124
+10507,Neuhaus am Klausenbach,13.99,123
+10508,Rudersdorf,11.24,252
+10509,Sankt Martin an der Raab,12.57,244
+10510,Weichselbaum,11.94,85
+10511,Königsdorf,12.76,100
+10512,Mühlgraben,7.73,29
+10601,Draßburg,13.38,165
+10602,Forchtenstein,10.89,305
+10603,Hirm,8.16,90
+10604,Loipersbach im Burgenland,11.37,138
+10605,Marz,9.11,189
+10606,Mattersburg,9.68,731
+10607,Neudörfl,10.05,504
+10608,Pöttelsdorf,11.14,84
+10609,Pöttsching,10.79,331
+10610,Rohrbach bei Mattersburg,10.77,289
+10611,Bad Sauerbrunn,11.76,277
+10612,Schattendorf,10,236
+10613,Sieggraben,9.90,124
+10614,Sigleß,13.27,157
+10615,Wiesen,12.07,337
+10616,Antau,9.57,81
+10617,Baumgarten,13.77,127
+10618,Zemendorf-Stöttera,9.85,130
+10619,Krensdorf,8.65,54
+10701,Andau,13.72,311
+10702,Apetlon,13.61,238
+10703,Bruckneudorf,6.37,198
+10704,Deutsch Jahrndorf,13.06,84
+10705,Frauenkirchen,12.28,364
+10706,Gattendorf,8.83,134
+10707,Gols,10.34,407
+10708,Halbturn,13.84,259
+10709,Illmitz,12.52,292
+10710,Jois,9.37,155
+10711,Kittsee,8.13,309
+10712,Mönchhof,11.05,242
+10713,Neusiedl am See,7.99,710
+10714,Nickelsdorf,10.58,195
+10715,Pama,9.35,120
+10716,Pamhagen,12.23,180
+10717,Parndorf,6.23,334
+10718,Podersdorf am See,12.91,277
+10719,Sankt Andrä am Zicksee,12.46,173
+10720,Tadten,14.19,162
+10721,Wallern im Burgenland,12.32,200
+10722,Weiden am See,10.90,283
+10723,Winden am See,10.04,139
+10724,Zurndorf,12.67,294
+10725,Neudorf,8.40,72
+10726,Potzneusiedl,10.31,70
+10727,Edelstal,9.71,80
+10801,Deutschkreutz,12.45,391
+10802,Draßmarkt,12.38,171
+10803,Frankenau-Unterpullendorf,13.97,152
+10804,Großwarasdorf,14.76,201
+10805,Horitschon,9.68,175
+10806,Kaisersdorf,12.61,75
+10807,Kobersdorf,10.49,197
+10808,Lackenbach,13.35,155
+10809,Lockenhaus,11.10,230
+10810,Lutzmannsburg,13.06,110
+10811,Mannersdorf an der Rabnitz,12.23,218
+10812,Markt Sankt Martin,11.40,146
+10813,Neckenmarkt,12.72,213
+10814,Neutal,12.89,147
+10815,Nikitsch,19.29,268
+10816,Oberpullendorf,11.21,374
+10817,Pilgersdorf,9.94,156
+10818,Piringsdorf,11.29,93
+10819,Raiding,20.09,184
+10820,Ritzing,15.48,141
+10821,Steinberg-Dörfl,11.62,152
+10822,Stoob,9.90,134
+10823,Weppersdorf,12.09,231
+10824,Lackendorf,9.43,58
+10825,Unterfrauenhaid,8.22,53
+10826,Unterrabnitz-Schwendgraben,8.78,54
+10827,Weingraben,13.79,48
+10828,Oberloisdorf,9.40,75
+10901,Bad Tatzmannsdorf,12.79,212
+10902,Bernstein,13.94,301
+10903,Deutsch Schützen-Eisenberg,16.25,175
+10904,Grafenschachen,8.54,107
+10905,Großpetersdorf,12.04,433
+10906,Hannersdorf,13.92,103
+10907,Kemeten,8.97,138
+10908,Kohfidisch,11.55,166
+10909,Litzelsdorf,11.21,129
+10910,Loipersdorf-Kitzladen,6.76,92
+10911,Mariasdorf,9.86,112
+10912,Markt Allhau,9.95,200
+10913,Markt Neuhodis,11.35,73
+10914,Mischendorf,12.55,181
+10915,Oberdorf im Burgenland,9.92,97
+10916,Oberschützen,11.65,288
+10917,Oberwart,10.74,866
+10918,Pinkafeld,12.14,715
+10919,Rechnitz,13.53,413
+10920,Riedlingsdorf,11,186
+10921,Rotenturm an der Pinka,10.50,152
+10922,Schachendorf,12.11,90
+10923,Stadtschlaining,12.39,254
+10924,Unterkohlstätten,10,97
+10925,Unterwart,7.70,78
+10926,Weiden bei Rechnitz,12.72,100
+10927,Wiesfleck,7.55,91
+10928,Wolfau,8.44,128
+10929,Neustift an der Lafnitz,5.59,46
+10930,Jabing,11.53,83
+10931,Badersdorf,12.24,35
+10932,Schandorf,21.34,70
+20101,Klagenfurt am Wörthersee,10.84,"11,407"
+20201,Villach,11.09,"7,290"
+20302,Dellach,14.77,175
+20305,Hermagor-Pressegger See,14.44,997
+20306,Kirchbach,12.95,321
+20307,Kötschach-Mauthen,14.25,473
+20316,St. Stefan im Gailtal,16.96,263
+20320,Gitschtal,13.44,165
+20321,Lesachtal,12.09,154
+20402,Ebenthal in Kärnten,10.81,889
+20403,Feistritz im Rosental,14.03,351
+20405,Ferlach,13.02,978
+20409,Grafenstein,9.39,290
+20412,Keutschach am See,12.20,295
+20414,Köttmannsdorf,11.86,378
+20415,Krumpendorf am Wörthersee,12.43,445
+20416,Ludmannsdorf,10.32,187
+20417,Maria Rain,10.18,278
+20418,Maria Saal,11.73,472
+20419,Maria Wörth,13.91,231
+20421,Moosburg,12.75,595
+20424,Pörtschach am Wörther See,13.22,397
+20425,Poggersdorf,9.19,308
+20428,St. Margareten im Rosental,11.32,123
+20432,Schiefling am Wörthersee,9.17,246
+20435,Techelsberg am Wörther See,10.44,231
+20441,Zell,12.78,75
+20442,Magdalensberg,10.11,377
+20501,Althofen,10,495
+20502,Brückl,10.61,290
+20503,Deutsch-Griffen,13.50,111
+20504,Eberstein,13.77,169
+20505,Friesach,14.39,698
+20506,Glödnitz,11.62,97
+20508,Gurk,12.39,146
+20509,Guttaring,11.08,166
+20511,Hüttenberg,14.21,181
+20512,Kappel am Krappfeld,10.69,207
+20513,Klein St. Paul,11.48,205
+20515,Liebenfels,9.60,328
+20518,Metnitz,13.20,239
+20519,Micheldorf,11.16,107
+20520,Mölbling,8.37,110
+20523,St. Georgen am Längsee,10.08,363
+20527,St. Veit an der Glan,12.35,"1,511"
+20530,Straßburg,13.03,256
+20531,Weitensfeld im Gurktal,12.71,252
+20534,Frauenstein,11.28,404
+20601,Bad Kleinkirchheim,14.12,234
+20602,Baldramsdorf,11.09,204
+20603,Berg im Drautal,10.54,129
+20604,Dellach im Drautal,12.67,206
+20605,Großkirchheim,10.48,137
+20607,Flattach,9.90,111
+20608,Gmünd in Kärnten,13.08,334
+20609,Greifenburg,11.87,202
+20610,Heiligenblut am Großglockner,14.49,139
+20611,Irschen,9.73,186
+20613,Kleblach-Lind,10.59,123
+20616,Lendorf,8.66,154
+20618,Mallnitz,15.05,116
+20619,Malta,10.12,189
+20620,Millstatt am See,13.63,472
+20622,Mörtschach,6.62,54
+20624,Mühldorf,15.07,154
+20625,Oberdrauburg,10.77,129
+20627,Obervellach,14.30,308
+20630,Radenthein,14.33,823
+20631,Rangersdorf,8.47,144
+20632,Rennweg am Katschberg,11.45,189
+20633,Sachsenburg,10.95,146
+20634,Seeboden am Millstätter See,14,939
+20635,Spittal an der Drau,12.22,"1,874"
+20636,Stall,8.91,133
+20637,Steinfeld,12.93,258
+20638,Trebesing,10.59,121
+20639,Weißensee,12.65,96
+20640,Winklern,13.42,159
+20642,Krems in Kärnten,12.60,202
+20643,Lurnfeld,12.29,329
+20644,Reißeck,12.71,265
+20701,Afritz am See,15.68,232
+20702,Arnoldstein,10.31,738
+20703,Arriach,12.45,166
+20705,Bad Bleiberg,13.59,291
+20707,Feistritz an der Gail,10.11,65
+20708,Feld am See,12.96,135
+20710,Ferndorf,12.37,249
+20711,Finkenstein am Faaker See,9.96,943
+20712,Fresach,11.22,139
+20713,Hohenthurn,10.44,91
+20719,Nötsch im Gailtal,11.45,268
+20720,Paternion,12.31,711
+20721,Rosegg,9.11,174
+20722,St. Jakob im Rosental,12.16,530
+20723,Stockenboi,11.63,181
+20724,Treffen am Ossiacher See,15.95,728
+20725,Velden am Wörther See,13.57,"1,246"
+20726,Weißenstein,12.26,358
+20727,Wernberg,10.40,589
+20801,Bleiburg,10.65,424
+20802,Diex,9.90,78
+20803,Eberndorf,11.40,683
+20804,Eisenkappel-Vellach,14.07,312
+20805,Feistritz ob Bleiburg,8.26,185
+20806,Gallizien,10.11,181
+20807,Globasnitz,9.01,142
+20808,Griffen,10.38,352
+20810,Neuhaus,15.98,163
+20812,Ruden,10.21,153
+20813,St. Kanzian am Klopeiner See,10.79,500
+20815,Sittersdorf,10.58,206
+20817,Völkermarkt,10.84,"1,182"
+20901,Bad St. Leonhard im Lavanttal,12.35,524
+20905,Frantschach-St. Gertraud,13.99,335
+20909,Lavamünd,11.75,324
+20911,Preitenegg,12.23,109
+20912,Reichenfels,10.76,183
+20913,St. Andrä,11.36,"1,118"
+20914,St. Georgen im Lavanttal,8.51,163
+20918,St. Paul im Lavanttal,12.50,393
+20923,Wolfsberg,11.51,"2,872"
+21001,Albeck,11.50,111
+21002,Feldkirchen in Kärnten,11.42,"1,659"
+21003,Glanegg,11.24,200
+21004,Gnesau,10.93,113
+21005,Himmelberg,10.39,242
+21006,Ossiach,14.36,104
+21007,Reichenau,11.98,203
+21008,St. Urban,9.15,150
+21009,Steindorf am Ossiacher See,13.81,531
+21010,Steuerberg,9.28,146
+30101,Krems an der Donau,11.83,"3,013"
+30201,St. Pölten,10.03,"5,996"
+30301,Waidhofen an der Ybbs,11.63,"1,286"
+30401,Wiener Neustadt,8.48,"4,170"
+30501,Allhartsberg,7.89,175
+30502,Amstetten,9.89,"2,375"
+30503,Ardagger,7.71,278
+30504,Aschbach-Markt,8.64,328
+30506,Behamberg,9.47,326
+30507,Biberbach,7.71,181
+30508,Ennsdorf,8.08,267
+30509,Ernsthofen,8.86,205
+30510,Ertl,6.34,79
+30511,Euratsfeld,6.35,178
+30512,Ferschnitz,7.45,139
+30514,Haag,10.02,586
+30515,Haidershofen,9.43,351
+30516,Hollenstein an der Ybbs,10.86,183
+30517,Kematen an der Ybbs,9.38,253
+30520,Neuhofen an der Ybbs,6.84,211
+30521,Neustadtl an der Donau,8.31,180
+30522,Oed-Oehling,6.44,139
+30524,Opponitz,8.86,78
+30526,St. Georgen am Reith,11.53,61
+30527,St. Georgen am Ybbsfelde,9.08,255
+30529,St. Pantaleon-Erla,7.43,201
+30530,St. Peter in der Au,10.63,545
+30531,St. Valentin,10.65,996
+30532,Seitenstetten,8.41,282
+30533,Sonntagberg,12.16,445
+30534,Strengberg,7.86,174
+30536,Viehdorf,10.45,143
+30538,Wallsee-Sindelburg,11.19,249
+30539,Weistrach,7.82,192
+30541,Winklarn,7.74,144
+30542,Wolfsbach,7.19,161
+30543,Ybbsitz,9.75,328
+30544,Zeillern,7.97,154
+30601,Alland,9.85,264
+30602,Altenmarkt an der Triesting,10.54,227
+30603,Bad Vöslau,12.58,"1,570"
+30604,Baden,14.77,"3,831"
+30605,Berndorf,11.23,"1,002"
+30607,Ebreichsdorf,8.41,"1,010"
+30608,Enzesfeld-Lindabrunn,11.96,516
+30609,Furth an der Triesting,9.01,78
+30612,Günselsdorf,9.11,158
+30613,Heiligenkreuz,11.27,180
+30614,Hernstein,11.65,183
+30615,Hirtenberg,8.03,210
+30616,Klausen-Leopoldsdorf,8.67,145
+30618,Kottingbrunn,10.88,811
+30620,Leobersdorf,8.68,464
+30621,Mitterndorf an der Fischa,5.60,175
+30623,Oberwaltersdorf,7.47,395
+30625,Pfaffstätten,10.39,364
+30626,Pottendorf,9.51,739
+30627,Pottenstein,10.79,322
+30629,Reisenberg,9.03,158
+30631,Schönau an der Triesting,8.17,175
+30633,Seibersdorf,9.23,149
+30635,Sooß,11.14,120
+30636,Tattendorf,10.30,150
+30637,Teesdorf,7.58,144
+30639,Traiskirchen,9.31,"1,761"
+30641,Trumau,7.73,288
+30645,Weissenbach an der Triesting,11.18,188
+30646,Blumau-Neurißhof,7.95,155
+30701,Au am Leithaberge,11.68,111
+30702,Bad Deutsch-Altenburg,10.89,217
+30703,Berg,10.47,102
+30704,Bruck an der Leitha,10.69,929
+30706,Enzersdorf an der Fischa,9.09,333
+30708,Göttlesbrunn-Arbesthal,9.13,136
+30709,Götzendorf an der Leitha,9.38,209
+30710,Hainburg a.d. Donau,10.37,730
+30711,Haslau-Maria Ellend,7.45,151
+30712,Höflein,8.93,110
+30713,Hof am Leithaberge,9.77,164
+30715,Hundsheim,11.68,78
+30716,Mannersdorf am Leithagebirge,9.01,385
+30718,Petronell-Carnuntum,11.35,143
+30719,Prellenkirchen,11.20,191
+30721,Rohrau,8.94,149
+30722,Scharndorf,11.62,144
+30724,Sommerein,8.52,193
+30726,Trautmannsdorf an der Leitha,11.30,331
+30728,Wolfsthal,6.93,87
+30729,Ebergassing,7.64,334
+30730,Fischamend,9.71,557
+30731,Gramatneusiedl,6.49,240
+30732,Himberg,10.20,849
+30733,Klein-Neusiedl,10.31,95
+30734,Lanzendorf,8.06,157
+30735,Leopoldsdorf,8.53,479
+30736,Maria-Lanzendorf,12.28,278
+30737,Moosbrunn,9.24,167
+30738,Rauchenwarth,7.35,59
+30739,Schwadorf,7.32,176
+30740,Schwechat,8.35,"1,774"
+30741,Zwölfaxing,9.65,162
+30801,Aderklaa,7.20,17
+30802,Andlersdorf,7.55,12
+30803,Angern an der March,10.24,361
+30804,Auersthal,9.60,194
+30805,Bad Pirawarth,9.29,162
+30808,Deutsch-Wagram,9.03,836
+30810,Drösing,11.97,134
+30811,Dürnkrut,10.66,237
+30812,Ebenthal,9.06,80
+30813,Eckartsau,10.88,149
+30814,Engelhartstetten,9.65,213
+30817,Gänserndorf,9.02,"1,108"
+30819,Glinzendorf,6.67,24
+30821,Groß-Enzersdorf,9.39,"1,135"
+30822,Großhofen,10,10
+30824,Groß-Schweinbarth,8.51,118
+30825,Haringsee,9.84,114
+30826,Hauskirchen,10.09,129
+30827,Hohenau an der March,12.13,333
+30828,Hohenruppersdorf,9.46,91
+30829,Jedenspeigen,13.22,147
+30830,Lassee,8.94,269
+30831,Leopoldsdorf im Marchfeld,9.51,288
+30834,Mannsdorf an der Donau,11.44,39
+30835,Marchegg,10.22,318
+30836,Markgrafneusiedl,8.90,82
+30838,Matzen-Raggendorf,8.75,263
+30841,Neusiedl an der Zaya,10.52,127
+30842,Obersiebenbrunn,8.67,152
+30844,Orth an der Donau,12.84,287
+30845,Palterndorf-Dobermannsdorf,10.89,145
+30846,Parbasdorf,10.17,18
+30848,Prottes,10.67,154
+30849,Raasdorf,6.76,49
+30850,Ringelsdorf-Niederabsdorf,9.64,124
+30852,Schönkirchen-Reyersdorf,9.11,184
+30854,Spannberg,9.15,90
+30856,Strasshof an der Nordbahn,7.91,965
+30857,Sulz im Weinviertel,9.63,121
+30858,Untersiebenbrunn,8.64,155
+30859,Velm-Götzendorf,10.83,85
+30860,Weikendorf,9.86,204
+30863,Zistersdorf,12.81,703
+30865,Weiden an der March,10.63,106
+30902,Amaliendorf-Aalfang,12.42,136
+30903,Brand-Nagelberg,14.23,203
+30904,Eggern,12.99,86
+30906,Eisgarn,13.25,93
+30908,Gmünd,13.89,714
+30909,Großdietmanns,11.03,238
+30910,Bad Großpertholz,12.12,155
+30912,Großschönau,8.71,105
+30913,Moorbad Harbach,10.59,72
+30915,Haugschlag,14.14,67
+30916,Heidenreichstein,15.13,568
+30917,Hirschbach,10.82,62
+30920,Hoheneich,14.51,195
+30921,Kirchberg am Walde,12.36,155
+30925,Litschau,15.43,323
+30929,Reingers,11.72,71
+30932,St. Martin,9.05,96
+30935,Schrems,13.18,695
+30939,Unserfrau-Altweitra,10.93,109
+30940,Waldenstein,8.67,102
+30942,Weitra,15.49,397
+31001,Alberndorf im Pulkautal,11.60,82
+31008,Göllersdorf,9.33,300
+31009,Grabern,7.79,135
+31014,Guntersdorf,9.51,110
+31015,Hadres,10.89,185
+31016,Hardegg,13.64,178
+31018,Haugsdorf,13.07,208
+31019,Heldenberg,7.31,108
+31021,Hohenwarth-Mühlbach a.M.,11.60,156
+31022,Hollabrunn,10.10,"1,264"
+31025,Mailberg,14.46,81
+31026,Maissau,12.77,251
+31028,Nappersdorf-Kammersdorf,12.51,149
+31033,Pernersdorf,11.25,120
+31035,Pulkau,14.25,208
+31036,Ravelsbach,12.53,209
+31037,Retz,14.32,600
+31038,Retzbach,12.86,128
+31041,Schrattenthal,13.62,119
+31042,Seefeld-Kadolz,13.72,129
+31043,Sitzendorf an der Schmida,12.43,274
+31051,Wullersdorf,10.16,248
+31052,Zellerndorf,10.80,258
+31053,Ziersdorf,10.51,352
+31101,Altenburg,8.88,73
+31102,Brunn an der Wild,9.05,78
+31103,Burgschleinitz-Kühnring,8.82,115
+31104,Drosendorf-Zissersdorf,15.26,173
+31105,Eggenburg,14.16,497
+31106,Gars am Kamp,13.56,471
+31107,Geras,12.29,154
+31109,Horn,12.65,821
+31110,Irnfritz-Messern,9.73,138
+31111,Japons,12.64,88
+31113,Langau,16.57,112
+31114,Meiseldorf,11.06,93
+31117,Pernegg,11.40,79
+31119,Röhrenbach,12.45,60
+31120,Röschitz,11.64,132
+31121,Rosenburg-Mold,12.05,104
+31123,St. Bernhard-Frauenhofen,9.23,118
+31124,Sigmundsherberg,11.07,188
+31129,Weitersfeld,12.85,196
+31130,Straning-Grafenberg,12.57,87
+31201,Bisamberg,12.37,603
+31202,Enzersfeld im Weinviertel,10.93,204
+31203,Ernstbrunn,10.77,357
+31204,Großmugl,9.67,156
+31205,Großrußbach,9.89,228
+31206,Hagenbrunn,8.25,199
+31207,Harmannsdorf,10.36,429
+31208,Hausleiten,7.88,303
+31213,Korneuburg,9.34,"1,290"
+31214,Langenzersdorf,13.42,"1,100"
+31215,Leitzersdorf,9.33,107
+31216,Leobendorf,9.99,526
+31224,Rußbach,9.99,137
+31226,Sierndorf,9.36,373
+31227,Spillern,7.94,210
+31228,Stetteldorf am Wagram,7.98,85
+31229,Stetten,9.15,127
+31230,Stockerau,10.63,"1,830"
+31234,Niederhollabrunn,9.68,146
+31235,Gerasdorf bei Wien,10.33,"1,256"
+31301,Aggsbach,14.47,89
+31302,Albrechtsberg an der Großen Krems,10.41,103
+31303,Bergern im Dunkelsteinerwald,10.16,133
+31304,Dürnstein,14.34,117
+31308,Grafenegg,8.01,265
+31309,Furth bei Göttweig,10.06,302
+31310,Gedersdorf,9.94,212
+31311,Gföhl,10.81,416
+31315,Hadersdorf-Kammern,11.24,222
+31319,Jaidhof,7.76,95
+31321,Krumau am Kamp,15.24,110
+31322,Langenlois,11.93,892
+31323,Lengenfeld,9.76,136
+31324,Lichtenau im Waldviertel,10.06,204
+31326,Maria Laach am Jauerling,11.71,104
+31327,Mautern an der Donau,14.49,489
+31330,Mühldorf,12.57,154
+31333,Paudorf,10.21,277
+31336,Rastenfeld,9.41,148
+31337,Rohrendorf bei Krems,9.73,205
+31338,Rossatz-Arnsdorf,15.20,159
+31340,St. Leonhard am Hornerwald,10.11,113
+31343,Senftenberg,12.83,246
+31344,Spitz,14.22,217
+31346,Straß im Straßertale,10.37,183
+31347,Stratzing,10.65,94
+31350,Weinzierl am Walde,12.07,147
+31351,Weißenkirchen in der Wachau,13.17,179
+31355,Schönberg am Kamp,13.56,249
+31356,Droß,7.35,76
+31401,Annaberg,15.66,75
+31402,Eschenau,10.58,136
+31403,Hainfeld,13.72,515
+31404,Hohenberg,15.90,222
+31405,Kaumberg,9.60,103
+31406,Kleinzell,11.36,97
+31407,Lilienfeld,11.34,297
+31408,Mitterbach am Erlaufsee,17.16,81
+31409,Ramsau,13.09,105
+31410,Rohrbach an der Gölsen,9.01,138
+31411,St. Aegyd am Neuwalde,17.48,313
+31412,St. Veit an der Gölsen,10.03,386
+31413,Traisen,11.23,380
+31414,Türnitz,14.58,269
+31502,Artstetten-Pöbring,8.79,111
+31503,Bergland,8.78,167
+31504,Bischofstetten,9.53,114
+31505,Blindenmarkt,7.73,216
+31506,Dorfstetten,6.58,36
+31507,Dunkelsteinerwald,8.35,201
+31508,Erlauf,10.19,114
+31509,Golling an der Erlauf,9.90,146
+31511,Hofamt Priel,8.87,152
+31513,Hürm,7.26,146
+31514,Kilb,8.67,225
+31515,Kirnberg an der Mank,8.17,91
+31516,Klein-Pöchlarn,11.11,117
+31517,Krummnußbaum,7.89,136
+31519,Leiben,9.08,120
+31520,Loosdorf,8.39,325
+31521,Mank,10.94,366
+31522,Marbach an der Donau,9.47,160
+31523,Maria Taferl,6.93,66
+31524,Melk,11.60,664
+31525,Münichreith-Laimbach,9.25,149
+31527,Neumarkt an der Ybbs,8.16,177
+31528,Nöchling,6.59,67
+31530,Persenbeug-Gottsdorf,8.83,190
+31531,Petzenkirchen,9.20,147
+31533,Pöchlarn,13,516
+31534,Pöggstall,12.16,290
+31535,Raxendorf,7.92,80
+31537,Ruprechtshofen,9.01,210
+31539,St. Leonhard am Forst,9.33,290
+31540,St. Martin-Karlsbach,7.83,128
+31541,St. Oswald,8.16,93
+31542,Schönbühel-Aggsbach,10.65,100
+31543,Schollach,6.56,71
+31546,Weiten,9.71,106
+31549,Ybbs an der Donau,11.61,656
+31550,Zelking-Matzleinsdorf,10.77,129
+31551,Texingtal,8.93,149
+31552,Yspertal,11.08,222
+31553,Emmersdorf an der Donau,9.63,171
+31601,Altlichtenwarth,11.35,86
+31603,Asparn an der Zaya,9.92,192
+31604,Bernhardsthal,13.06,207
+31605,Bockfließ,12.50,161
+31606,Drasenhofen,14.15,158
+31608,Falkenstein,12.88,72
+31609,Fallbach,12.22,97
+31611,Gaubitsch,6,56
+31612,Gaweinstal,9.65,398
+31613,Gnadendorf,11.70,136
+31614,Großebersdorf,11.74,272
+31615,Großengersdorf,8.84,137
+31616,Großharras,10.60,113
+31617,Großkrut,9.58,162
+31620,Hausbrunn,10.47,94
+31621,Herrnbaumgarten,11.66,108
+31622,Hochleithen,10.72,117
+31627,Kreuttal,11.52,169
+31628,Kreuzstetten,9.85,167
+31629,Laa an der Thaya,11.69,734
+31630,Ladendorf,10.04,233
+31633,Mistelbach,10.92,"1,315"
+31634,Neudorf im Weinviertel,7.72,104
+31636,Niederleis,7.77,72
+31642,Pillichsdorf,8.49,106
+31644,Poysdorf,12.02,673
+31645,Rabensburg,13.57,144
+31646,Schrattenberg,12.59,106
+31649,Staatz,10.35,199
+31650,Stronsdorf,9.64,148
+31651,Ulrichskirchen-Schleinbach,11.87,315
+31652,Unterstinkenbrunn,11.96,67
+31653,Wildendürnbach,9.57,146
+31654,Wilfersdorf,9.39,196
+31655,Wolkersdorf im Weinviertel,10.78,813
+31658,Ottenthal,11.34,60
+31701,Achau,6.31,109
+31702,Biedermannsdorf,12.69,398
+31703,Breitenfurt bei Wien,16.62,997
+31704,Brunn am Gebirge,10.56,"1,300"
+31706,Gaaden,11.16,178
+31707,Gießhübl,11.02,268
+31709,Gumpoldskirchen,10.09,406
+31710,Guntramsdorf,10.98,"1,038"
+31711,Hennersdorf,12.12,185
+31712,Hinterbrühl,13.48,525
+31713,Kaltenleutgeben,10.73,354
+31714,Laab im Walde,16.47,180
+31715,Laxenburg,14.53,449
+31716,Maria Enzersdorf,16.19,"1,425"
+31717,Mödling,12.79,"2,642"
+31718,Münchendorf,9.10,295
+31719,Perchtoldsdorf,15.24,"2,280"
+31723,Vösendorf,8.76,675
+31725,Wiener Neudorf,12.58,"1,214"
+31726,Wienerwald,10.03,294
+31801,Altendorf,6.44,23
+31802,Aspang-Markt,11.36,205
+31803,Aspangberg-St. Peter,10.65,197
+31804,Breitenau,8.22,128
+31805,Breitenstein,15.44,42
+31806,Buchbach,14.12,50
+31807,Edlitz,10.83,98
+31808,Enzenreith,11.38,221
+31809,Feistritz am Wechsel,12.15,125
+31810,Gloggnitz,13.87,809
+31811,Grafenbach-St. Valentin,11.02,256
+31812,Grimmenstein,11.91,159
+31813,Grünbach am Schneeberg,12.10,198
+31814,Kirchberg am Wechsel,12.23,308
+31815,Mönichkirchen,12.38,77
+31817,Natschbach-Loipersbach,9.53,166
+31818,Neunkirchen,9.80,"1,268"
+31820,Otterthal,7.82,42
+31821,Payerbach,12.98,273
+31823,Pitten,10.92,324
+31825,Prigglitz,9.89,43
+31826,Puchberg am Schneeberg,15.99,432
+31827,Raach am Hochgebirge,9.60,31
+31829,Reichenau an der Rax,18.12,448
+31830,St. Corona am Wechsel,11.87,47
+31831,St. Egyden am Steinfeld,8.23,190
+31832,Scheiblingkirchen-Thernberg,11.91,233
+31833,Schottwien,8.97,60
+31834,Schrattenbach,11.89,46
+31835,Schwarzau am Steinfeld,7.82,171
+31836,Schwarzau im Gebirge,13.23,82
+31837,Seebenstein,9.46,141
+31838,Semmering,14.96,92
+31839,Ternitz,12.25,"1,801"
+31840,Thomasberg,11.19,138
+31841,Trattenbach,7.39,38
+31842,Bürg-Vöstenhof,18.35,29
+31843,Warth,11.72,184
+31844,Wartmannstetten,10.40,168
+31845,Willendorf,9.67,96
+31846,Wimpassing im Schwarzatale,10.08,165
+31847,Würflach,11.71,194
+31848,Zöbern,9.55,129
+31849,Höflein an der Hohen Wand,12.19,108
+31901,Altlengbach,9.56,312
+31902,Asperhofen,8.09,191
+31903,Böheimkirchen,8.99,476
+31904,Brand-Laaben,8.90,112
+31905,Eichgraben,12.54,601
+31906,Frankenfels,11.06,206
+31907,Gerersdorf,11.46,124
+31909,Hofstetten-Grünau,7.91,213
+31910,Hafnerbach,8.99,150
+31911,Haunoldstein,6.71,81
+31912,Herzogenburg,11.49,918
+31913,Inzersdorf-Getzersdorf,8.25,140
+31915,Kapelln,8.71,117
+31916,Karlstetten,9.42,212
+31917,Kasten bei Böheimkirchen,8.88,128
+31918,Kirchberg an der Pielach,11.39,355
+31919,Kirchstetten,12.74,292
+31920,Loich,13.81,74
+31921,Maria Anzbach,12.86,416
+31922,Markersdorf-Haindorf,8.10,165
+31923,Michelbach,10.33,88
+31925,Neidling,10.62,162
+31926,Neulengbach,10.03,870
+31927,Neustift-Innermanzing,10.13,160
+31928,Nußdorf ob der Traisen,8.56,163
+31929,Ober-Grafendorf,10.62,530
+31930,Obritzberg-Rust,9.80,234
+31932,Prinzersdorf,7.93,138
+31934,Pyhra,9.46,342
+31935,Rabenstein an der Pielach,8.88,221
+31938,St. Margarethen an der Sierning,9.21,97
+31939,Schwarzenbach an der Pielach,14.45,49
+31940,Statzendorf,7.63,107
+31941,Stössing,8.92,76
+31943,Traismauer,9.21,597
+31945,Weinburg,8.52,120
+31946,Perschling,8.44,132
+31947,Wilhelmsburg,12.69,832
+31948,Wölbling,8.74,213
+31949,Gablitz,14.11,730
+31950,Mauerbach,13.89,509
+31951,Pressbaum,11.50,912
+31952,Purkersdorf,11.24,"1,121"
+31953,Tullnerbach,11.91,350
+31954,Wolfsgraben,9.75,176
+32001,Gaming,14.55,419
+32002,Göstling an der Ybbs,12.65,258
+32003,Gresten,9.47,188
+32004,Gresten-Land,7.77,116
+32005,Lunz am See,14.16,249
+32006,Oberndorf an der Melk,8.96,270
+32007,Puchenstuben,9.96,27
+32008,Purgstall an der Erlauf,10.04,538
+32009,Randegg,10.02,183
+32010,Reinsberg,6.92,72
+32011,St. Anton an der Jeßnitz,12.10,137
+32012,St. Georgen an der Leys,7.79,102
+32013,Scheibbs,13.70,575
+32014,Steinakirchen am Forst,8.90,204
+32015,Wang,7.59,104
+32016,Wieselburg,7.59,368
+32017,Wieselburg-Land,8.96,304
+32018,Wolfpassing,7.53,133
+32101,Absdorf,7.31,183
+32104,Atzenbrugg,8.25,288
+32106,Fels am Wagram,8.05,205
+32107,Grafenwörth,13.22,440
+32109,Großriedenthal,8.82,86
+32110,Großweikersdorf,10.93,368
+32112,Judenau-Baumgarten,8.83,210
+32114,Kirchberg am Wagram,9.74,374
+32115,Königsbrunn am Wagram,8.48,122
+32116,Königstetten,7.74,195
+32119,Langenrohr,7.75,198
+32120,Michelhausen,6.33,277
+32131,Sieghartskirchen,10.23,799
+32132,Sitzenberg-Reidling,10.74,264
+32134,Tulbing,12.43,410
+32135,Tulln an der Donau,10.20,"1,729"
+32139,Würmla,9.51,156
+32140,Zeiselmauer-Wolfpassing,12.88,296
+32141,Zwentendorf an der Donau,8.81,369
+32142,St. Andrä-Wördern,11.84,942
+32143,Muckendorf-Wipfing,11.08,187
+32144,Klosterneuburg,13.52,"3,805"
+32202,Dietmanns,13.96,143
+32203,Dobersberg,11.63,178
+32206,Gastern,11.20,129
+32207,Groß-Siegharts,13.24,342
+32209,Karlstein an der Thaya,12.35,179
+32210,Kautzen,13.22,142
+32212,Ludweis-Aigen,14.29,126
+32214,Pfaffenschlag bei Waidhofen a.d.Thaya,10.40,94
+32216,Raabs an der Thaya,16.77,440
+32217,Thaya,9.99,147
+32219,Vitis,10.40,280
+32220,Waidhofen an der Thaya,12.66,663
+32221,Waidhofen an der Thaya-Land,7.69,99
+32222,Waldkirchen an der Thaya,15.29,74
+32223,Windigsteig,10.25,98
+32301,Bad Fischau-Brunn,10.73,379
+32302,Bad Schönau,14.23,105
+32304,Ebenfurth,9.43,307
+32305,Eggendorf,12.23,623
+32306,Bad Erlach,11.29,374
+32307,Felixdorf,10.67,488
+32308,Gutenstein,18.47,232
+32309,Hochneukirchen-Gschaidt,9.64,158
+32310,Hochwolkersdorf,10.49,103
+32311,Hohe Wand,8.37,122
+32312,Hollenthon,7.79,79
+32313,Katzelsdorf,10.75,340
+32314,Kirchschlag in der Buckligen Welt,12.36,342
+32315,Krumbach,9.84,236
+32316,Lanzenkirchen,8.35,370
+32317,Lichtenegg,10.32,109
+32318,Lichtenwörth,10.59,312
+32319,Markt Piesting,8.70,271
+32320,Matzendorf-Hölles,12.38,266
+32321,Miesenbach,11.39,73
+32322,Muggendorf,10.82,54
+32323,Pernitz,11.66,297
+32324,Rohr im Gebirge,9.88,42
+32325,Bromberg,9.45,110
+32326,Schwarzenbach,10.84,101
+32327,Sollenau,11.21,614
+32330,Theresienfeld,8.72,371
+32331,Waidmannsfeld,13.36,197
+32332,Waldegg,11.74,234
+32333,Walpersbach,8.78,108
+32334,Weikersdorf am Steinfelde,8.36,93
+32335,Wiesmath,9.40,145
+32336,Winzendorf-Muthmannsdorf,11.30,210
+32337,Wöllersdorf-Steinabrückl,7.91,403
+32338,Zillingdorf,9.13,190
+32501,Allentsteig,16.22,282
+32502,Arbesbach,11.08,175
+32503,Bärnkopf,9.45,31
+32504,Echsenbach,7.70,96
+32505,Göpfritz an der Wild,11.36,198
+32506,Grafenschlag,10.32,86
+32508,Groß Gerungs,9.78,436
+32509,Großgöttfritz,8.81,116
+32511,Gutenbrunn,14.48,74
+32514,Kirchschlag,10.95,68
+32515,Kottes-Purk,10.79,155
+32516,Langschlag,9.97,171
+32517,Martinsberg,11.43,120
+32518,Ottenschlag,14.48,147
+32519,Altmelon,10.13,86
+32520,Pölla,11.15,102
+32521,Rappottenstein,9.50,165
+32522,Sallingberg,11.86,149
+32523,Schönbach,9.21,68
+32524,Schwarzenau,12.11,178
+32525,Schweiggers,9.71,197
+32528,Bad Traunstein,9.26,91
+32529,Waldhausen,11.28,134
+32530,Zwettl-Niederösterreich,12.37,"1,332"
+40101,Linz,9.72,"20,753"
+40201,Steyr,11.72,"4,456"
+40301,Wels,9.07,"5,936"
+40401,Altheim,9.74,496
+40402,Aspach,7.66,204
+40403,Auerbach,4.43,37
+40404,Braunau am Inn,10.88,"1,916"
+40405,Burgkirchen,7.80,215
+40406,Eggelsberg,7.94,235
+40407,Feldkirchen bei Mattighofen,7.28,156
+40408,Franking,8.99,93
+40409,Geretsberg,9.05,108
+40410,Gilgenberg am Weilhart,7.16,95
+40411,Haigermoos,8.26,54
+40412,Handenberg,8.45,112
+40413,Helpfau-Uttendorf,6.94,263
+40414,Hochburg-Ach,11.04,373
+40415,Höhnhart,7.66,114
+40416,Jeging,6.66,53
+40417,Kirchberg bei Mattighofen,7.29,96
+40418,Lengau,7.70,396
+40419,Lochen am See,6.89,208
+40420,Maria Schmolln,12.36,182
+40421,Mattighofen,6.96,536
+40422,Mauerkirchen,9.19,247
+40423,Mining,7.96,104
+40424,Moosbach,7.10,81
+40425,Moosdorf,8.63,149
+40426,Munderfing,8.22,255
+40427,Neukirchen an der Enknach,9.53,223
+40428,Ostermiething,10.81,368
+40429,Palting,6.65,86
+40430,Perwang am Grabensee,7.24,82
+40431,Pfaffstätt,7.19,93
+40432,Pischelsdorf am Engelbach,9.33,166
+40433,Polling im Innkreis,9.27,92
+40434,Roßbach,8.20,73
+40435,St. Georgen am Fillmannsbach,6.57,31
+40436,St. Johann am Walde,8.32,170
+40437,St. Pantaleon,8.83,291
+40438,St. Peter am Hart,9.01,232
+40439,St. Radegund,6.99,49
+40440,St. Veit im Innkreis,9.85,40
+40441,Schalchen,8.48,354
+40442,Schwand im Innkreis,7.81,83
+40443,Tarsdorf,8.81,187
+40444,Treubach,7.59,60
+40445,Überackern,8.56,59
+40446,Weng im Innkreis,9.68,141
+40501,Alkoven,9.07,560
+40502,Aschach an der Donau,11.01,245
+40503,Eferding,11.31,494
+40504,Fraham,8.72,228
+40505,Haibach ob der Donau,9.68,122
+40506,Hartkirchen,11.25,441
+40507,Hinzenbach,8.14,167
+40508,Prambachkirchen,7.94,238
+40509,Pupping,9.40,175
+40510,St. Marienkirchen an der Polsenz,8.82,207
+40511,Scharten,7.88,187
+40512,Stroheim,7.85,133
+40601,Freistadt,9.14,756
+40602,Grünbach,8.68,162
+40603,Gutau,8.61,240
+40604,Hagenberg im Mühlkreis,7.33,232
+40605,Hirschbach im Mühlkreis,9.31,114
+40606,Kaltenberg,9.54,56
+40607,Kefermarkt,7.98,177
+40608,Königswiesen,8.11,247
+40609,Lasberg,11.14,321
+40610,Leopoldschlag,9.14,90
+40611,Liebenau,10.07,163
+40612,Neumarkt im Mühlkreis,8.01,261
+40613,Pierbach,7.75,79
+40614,Pregarten,9.43,529
+40615,Rainbach im Mühlkreis,10.87,328
+40616,Sandl,9.75,137
+40617,St. Leonhard bei Freistadt,10,132
+40618,St. Oswald bei Freistadt,7.22,218
+40619,Schönau im Mühlkreis,8.96,177
+40620,Tragwein,8.63,272
+40621,Unterweißenbach,10.62,232
+40622,Unterweitersdorf,7.01,154
+40623,Waldburg,6.22,91
+40624,Wartberg ob der Aist,8,359
+40625,Weitersfelden,9.21,94
+40626,Windhaag bei Freistadt,7.50,119
+40627,Bad Zell,9.42,279
+40701,Altmünster,11.23,"1,123"
+40702,Bad Goisern am Hallstättersee,12.01,910
+40703,Bad Ischl,13.10,"1,848"
+40704,Ebensee am Traunsee,12.69,946
+40705,Gmunden,13.85,"1,833"
+40706,Gosau,11.80,220
+40707,Grünau im Almtal,13.55,275
+40708,Gschwandt,7.86,234
+40709,Hallstatt,13.84,102
+40710,Kirchham,8.09,181
+40711,Laakirchen,9.25,903
+40712,Obertraun,14.56,106
+40713,Ohlsdorf,8.73,467
+40714,Pinsdorf,8.02,356
+40715,Roitham am Traunfall,8.55,183
+40716,St. Konrad,7.82,91
+40717,St. Wolfgang im Salzkammergut,11.63,335
+40718,Traunkirchen,12,206
+40719,Scharnstein,10.97,537
+40720,Vorchdorf,9.22,725
+40801,Aistersheim,7.50,76
+40802,Bad Schallerbach,9.68,440
+40804,Eschenau im Hausruckkreis,8.57,90
+40805,Gallspach,10.66,303
+40806,Gaspoltshofen,10.35,378
+40807,Geboltskirchen,9.46,139
+40808,Grieskirchen,11.42,597
+40809,Haag am Hausruck,8.42,198
+40810,Heiligenberg,7.19,52
+40811,Hofkirchen an der Trattnach,7.25,123
+40812,Kallham,12.11,304
+40813,Kematen am Innbach,6.20,87
+40814,Meggenhofen,6.96,107
+40815,Michaelnbach,8.46,110
+40816,Natternbach,9.09,210
+40817,Neukirchen am Walde,9.46,158
+40818,Neumarkt im Hausruckkreis,10.24,156
+40820,Pötting,9.67,55
+40821,Pollham,7.29,75
+40822,Pram,8.61,151
+40823,Rottenbach,8.85,102
+40824,St. Agatha,8.20,179
+40825,St. Georgen bei Grieskirchen,6.75,89
+40826,St. Thomas,5.99,35
+40827,Schlüßlberg,9.44,288
+40828,Steegen,6.93,76
+40829,Taufkirchen an der Trattnach,8.44,165
+40830,Tollet,8.33,79
+40831,Waizenkirchen,10.08,394
+40832,Wallern an der Trattnach,9.14,285
+40833,Weibern,9.97,167
+40834,Wendling,6.16,55
+40835,Peuerbach,10.19,478
+40901,Edlbach,7.75,50
+40902,Grünburg,10.51,403
+40903,Hinterstoder,17.56,151
+40904,Inzersdorf im Kremstal,9.58,181
+40905,Kirchdorf an der Krems,10.14,508
+40906,Klaus an der Pyhrnbahn,10.91,124
+40907,Kremsmünster,8.99,633
+40908,Micheldorf in Oberösterreich,10.64,636
+40909,Molln,11.28,406
+40910,Nußbach,7.83,180
+40911,Oberschlierbach,10.92,52
+40912,Pettenbach,7.84,424
+40913,Ried im Traunkreis,8.95,264
+40914,Rosenau am Hengstpaß,10.63,69
+40915,Roßleithen,11.28,206
+40916,St. Pankraz,9.31,35
+40917,Schlierbach,7.89,232
+40918,Spital am Pyhrn,9.98,230
+40919,Steinbach am Ziehberg,8.57,76
+40920,Steinbach an der Steyr,8.92,175
+40921,Vorderstoder,10.86,91
+40922,Wartberg an der Krems,8.28,243
+40923,Windischgarsten,14.30,337
+41001,Allhaming,8.42,106
+41002,Ansfelden,8.22,"1,501"
+41003,Asten,6.17,459
+41004,Eggendorf im Traunkreis,5.60,65
+41005,Enns,9.27,"1,130"
+41006,Hargelsberg,7.15,104
+41007,Hörsching,8.89,584
+41008,Hofkirchen im Traunkreis,6.86,143
+41009,Kematen an der Krems,6.25,193
+41010,Kirchberg-Thening,10.83,275
+41011,Kronstorf,9.14,319
+41012,Leonding,9.80,"2,866"
+41013,St. Florian,11.84,748
+41014,Neuhofen an der Krems,8.96,615
+41015,Niederneukirchen,8.95,187
+41016,Oftering,9.19,195
+41017,Pasching,8.57,680
+41018,Piberbach,7.38,151
+41019,Pucking,8.05,337
+41020,St. Marien,6.76,354
+41021,Traun,9.04,"2,291"
+41022,Wilhering,10.12,629
+41101,Allerheiligen im Mühlkreis,7.53,97
+41102,Arbing,5.95,92
+41103,Baumgartenberg,10.43,196
+41104,Dimbach,9.14,91
+41105,Grein,10.63,311
+41106,Katsdorf,6.66,221
+41107,Klam,5.13,50
+41108,Bad Kreuzen,10.12,240
+41109,Langenstein,7.65,197
+41110,Luftenberg an der Donau,8.82,382
+41111,Mauthausen,9.34,459
+41112,Mitterkirchen im Machland,8.05,143
+41113,Münzbach,7.64,145
+41114,Naarn im Machlande,8.29,320
+41115,Pabneukirchen,7.80,132
+41116,Perg,8.13,771
+41117,Rechberg,5.74,60
+41118,Ried in der Riedmark,7.31,321
+41119,St. Georgen am Walde,8.46,167
+41120,St. Georgen an der Gusen,10.05,448
+41121,St. Nikola an der Donau,7.12,54
+41122,St. Thomas am Blasenstein,9.48,90
+41123,Saxen,8.54,144
+41124,Schwertberg,9.61,526
+41125,Waldhausen im Strudengau,8.82,254
+41126,Windhaag bei Perg,6.43,99
+41201,Andrichsfurt,7.53,60
+41202,Antiesenhofen,8.80,97
+41203,Aurolzmünster,7.67,249
+41204,Eberschwang,10.39,367
+41205,Eitzing,6.15,56
+41206,Geiersberg,11.57,56
+41207,Geinberg,9.42,136
+41208,Gurten,9.83,117
+41209,Hohenzell,8.79,206
+41210,Kirchdorf am Inn,9.08,60
+41211,Kirchheim im Innkreis,7.22,58
+41212,Lambrechten,9.83,130
+41213,Lohnsburg am Kobernaußerwald,9.48,209
+41214,Mehrnbach,10.82,255
+41215,Mettmach,7.73,189
+41216,Mörschwang,9.79,32
+41217,Mühlheim am Inn,9.18,66
+41218,Neuhofen im Innkreis,7.95,201
+41219,Obernberg am Inn,13.18,226
+41220,Ort im Innkreis,7.28,101
+41221,Pattigham,7.60,83
+41222,Peterskirchen,8.17,54
+41223,Pramet,8.57,89
+41224,Reichersberg,7.92,132
+41225,Ried im Innkreis,11.15,"1,423"
+41226,St. Georgen bei Obernberg am Inn,12.93,68
+41227,St. Marienkirchen am Hausruck,5.86,53
+41228,St. Martin im Innkreis,6.40,142
+41229,Schildorn,7.64,94
+41230,Senftenbach,7.73,61
+41231,Taiskirchen im Innkreis,8.29,202
+41232,Tumeltsham,10.40,165
+41233,Utzenaich,8.01,133
+41234,Waldzell,7.96,183
+41235,Weilbach,10.67,65
+41236,Wippenham,6.45,37
+41304,Altenfelden,8.54,195
+41305,Arnreit,6.51,78
+41306,Atzesberg,8.74,39
+41307,Auberg,8.28,51
+41309,Haslach an der Mühl,12.82,331
+41311,Hörbich,6.89,29
+41312,Hofkirchen im Mühlkreis,9.24,143
+41313,Julbach,9.69,148
+41314,Kirchberg ob der Donau,7.56,81
+41315,Klaffer am Hochficht,8.14,112
+41316,Kleinzell im Mühlkreis,10.54,180
+41317,Kollerschlag,6.87,106
+41318,Lembach im Mühlkreis,12.96,196
+41319,Lichtenau im Mühlkreis,9.36,45
+41320,Nebelberg,6.24,40
+41321,Neufelden,10.71,130
+41322,Niederkappel,8.23,82
+41323,Niederwaldkirchen,7.66,143
+41324,Oberkappel,8.61,64
+41325,Oepping,7.46,116
+41326,Peilstein im Mühlviertel,7.68,120
+41327,Pfarrkirchen im Mühlkreis,10.61,147
+41328,Putzleinsdorf,7.05,109
+41329,Neustift im Mühlkreis,7.24,106
+41331,St. Johann am Wimberg,7.93,80
+41332,St. Martin im Mühlkreis,6.99,266
+41333,St. Oswald bei Haslach,5.95,31
+41334,St. Peter am Wimberg,8.66,155
+41336,St. Ulrich im Mühlkreis,7.79,56
+41337,St. Veit im Mühlkreis,8.08,108
+41338,Sarleinsbach,7.70,173
+41341,Schwarzenberg am Böhmerwald,13.54,78
+41342,Ulrichsberg,12.60,360
+41343,Aigen-Schlägl,10.63,349
+41344,Rohrbach-Berg,10.24,542
+41345,Helfenberg,11.21,174
+41346,St. Stefan-Afiesl,10.05,110
+41401,Altschwendt,8.60,62
+41402,Andorf,9.44,493
+41403,Brunnenthal,9.33,194
+41404,Diersbach,7.95,121
+41405,Dorf an der Pram,7.17,78
+41406,Eggerding,8.20,113
+41407,Engelhartszell,11.48,104
+41408,Enzenkirchen,7.19,128
+41409,Esternberg,11.44,326
+41410,Freinberg,10.65,163
+41411,Kopfing im Innkreis,9.77,192
+41412,Mayrhof,5.78,19
+41413,Münzkirchen,8.74,225
+41414,Raab,9.21,214
+41415,Rainbach im Innkreis,7.80,123
+41416,Riedau,9.44,190
+41417,St. Aegidi,10.07,158
+41418,St. Florian am Inn,8.62,278
+41419,St. Marienkirchen bei Schärding,7.64,155
+41420,St. Roman,7.88,140
+41421,St. Willibald,8.94,96
+41422,Schärding,13.03,729
+41423,Schardenberg,10.07,249
+41424,Sigharting,7.96,71
+41425,Suben,6.45,111
+41426,Taufkirchen an der Pram,10.43,309
+41427,Vichtenstein,9.59,59
+41428,Waldkirchen am Wesen,8.48,98
+41429,Wernstein am Inn,9.19,141
+41430,Zell an der Pram,12.28,240
+41501,Adlwang,6.88,149
+41502,Aschach an der Steyr,7.65,176
+41503,Bad Hall,11.33,665
+41504,Dietach,8.03,278
+41505,Gaflenz,9.08,178
+41506,Garsten,10.71,715
+41507,Großraming,11.12,293
+41508,Laussa,8.95,111
+41509,Losenstein,8.40,141
+41510,Maria Neustift,6.92,113
+41511,Pfarrkirchen bei Bad Hall,8.94,211
+41512,Reichraming,12.40,207
+41513,Rohr im Kremstal,6.83,102
+41514,St. Ulrich bei Steyr,10.73,347
+41515,Schiedlberg,8.35,110
+41516,Sierning,9.99,986
+41517,Ternberg,11.56,392
+41518,Waldneukirchen,8.78,200
+41521,Wolfern,10.83,367
+41522,Weyer,13.72,548
+41601,Alberndorf in der Riedmark,7.64,322
+41602,Altenberg bei Linz,9.49,459
+41603,Bad Leonfelden,10.42,462
+41604,Eidenberg,7.47,160
+41605,Engerwitzdorf,8.81,802
+41606,Feldkirchen an der Donau,10.68,596
+41607,Gallneukirchen,9.97,673
+41608,Goldwörth,8.93,67
+41609,Gramastetten,11.56,594
+41610,Haibach im Mühlkreis,8.12,79
+41611,Hellmonsödt,12.19,296
+41612,Herzogsdorf,6.75,185
+41613,Kirchschlag bei Linz,8.41,189
+41614,Lichtenberg,9.02,262
+41615,Oberneukirchen,8.76,285
+41616,Ottenschlag im Mühlkreis,6.29,37
+41617,Ottensheim,10.70,508
+41618,Puchenau,13.23,621
+41619,Reichenau im Mühlkreis,6.57,89
+41620,Reichenthal,8.31,129
+41621,St. Gotthard im Mühlkreis,8.63,114
+41622,Schenkenfelden,8.77,142
+41623,Sonnberg im Mühlkreis,7.17,80
+41624,Steyregg,11.09,555
+41626,Walding,11.63,499
+41627,Zwettl an der Rodl,7.58,137
+41628,Vorderweißenbach,8.34,230
+41701,Ampflwang im Hausruckwald,10.37,357
+41702,Attersee am Attersee,8.97,150
+41703,Attnang-Puchheim,9.89,919
+41704,Atzbach,8.63,104
+41705,Aurach am Hongar,7.21,135
+41706,Berg im Attergau,7.84,90
+41707,Desselbrunn,6.61,129
+41708,Fornach,7.07,71
+41709,Frankenburg am Hausruck,9.77,485
+41710,Frankenmarkt,9.64,373
+41711,Gampern,7.52,235
+41712,Innerschwand am Mondsee,8.31,107
+41713,Lenzing an der Ager,10.07,529
+41714,Manning,9.64,77
+41715,Mondsee,11.37,448
+41716,Neukirchen an der Vöckla,9.94,260
+41717,Niederthalheim,9.43,109
+41718,Nußdorf am Attersee,14.66,166
+41719,Oberhofen am Irrsee,6.36,110
+41720,Oberndorf bei Schwanenstadt,8.81,122
+41721,Oberwang,7.74,137
+41722,Ottnang am Hausruck,9.24,380
+41723,Pfaffing,9.34,142
+41724,Pilsbach,9.12,62
+41725,Pitzenberg,5.73,33
+41726,Pöndorf,8.51,207
+41727,Puchkirchen am Trattberg,6.04,66
+41728,Pühret,6.76,45
+41729,Redleiten,5.67,30
+41730,Redlham,8.73,144
+41731,Regau,7.69,554
+41732,Rüstorf,7.38,170
+41733,Rutzenham,7.22,21
+41734,St. Georgen im Attergau,7.09,350
+41735,St. Lorenz,8.91,236
+41736,Schlatt,9.70,137
+41737,Schörfling am Attersee,9.69,341
+41738,Schwanenstadt,9.52,457
+41739,Seewalchen am Attersee,10.10,580
+41740,Steinbach am Attersee,13.08,119
+41741,Straß im Attergau,6.87,106
+41742,Tiefgraben,7.11,298
+41743,Timelkam,10.49,620
+41744,Ungenach,8.57,125
+41745,Unterach am Attersee,12.49,195
+41746,Vöcklabruck,12.39,"1,609"
+41747,Vöcklamarkt,9.30,483
+41748,Weißenkirchen im Attergau,9.79,93
+41749,Weyregg am Attersee,11.53,188
+41750,Wolfsegg am Hausruck,11.17,223
+41751,Zell am Moos,9.37,156
+41752,Zell am Pettenfirst,8.95,114
+41801,Aichkirchen,6.75,42
+41802,Bachmanning,8.83,64
+41803,Bad Wimsbach-Neydharting,8.93,224
+41804,Buchkirchen,10.11,415
+41805,Eberstalzell,7.62,222
+41806,Edt bei Lambach,8.50,201
+41807,Fischlham,10.07,139
+41808,Gunskirchen,9.44,615
+41809,Holzhausen,4.46,52
+41810,Krenglbach,8.53,278
+41811,Lambach,10.10,395
+41812,Marchtrenk,7.94,"1,177"
+41813,Neukirchen bei Lambach,7.13,71
+41814,Offenhausen,7.90,134
+41815,Pennewang,6.52,69
+41816,Pichl bei Wels,8.43,249
+41817,Sattledt,8.60,237
+41818,Schleißheim,7.09,102
+41819,Sipbachzell,6.39,144
+41820,Stadl-Paura,10.25,544
+41821,Steinerkirchen an der Traun,10.05,247
+41822,Steinhaus,7.93,220
+41823,Thalheim bei Wels,11.85,659
+41824,Weißkirchen an der Traun,8.15,291
+50101,Salzburg,11.06,"17,439"
+50201,Abtenau,10.45,628
+50202,Adnet,9.86,374
+50203,Annaberg-Lungötz,10.63,237
+50204,Golling an der Salzach,10.07,454
+50205,Hallein,8.56,"1,853"
+50206,Krispl,8.81,76
+50207,Kuchl,9.40,706
+50208,Oberalm,12.20,536
+50209,Puch bei Hallein,9.21,453
+50210,Rußbach am Paß Gschütt,9.84,76
+50211,St. Koloman,9.24,168
+50212,Scheffau am Tennengebirge,8.86,134
+50213,Bad Vigaun,10.18,217
+50301,Anif,12.47,552
+50302,Anthering,9.32,348
+50303,Bergheim,10.08,576
+50304,Berndorf bei Salzburg,8.50,151
+50305,Bürmoos,9.09,459
+50306,Dorfbeuern,8.66,139
+50307,Ebenau,10.01,146
+50308,Elixhausen,10.98,345
+50309,Elsbethen,11.50,627
+50310,Eugendorf,10.08,719
+50311,Faistenau,7.45,234
+50312,Fuschl am See,8.49,147
+50313,Göming,8.87,68
+50314,Grödig,10.64,785
+50315,Großgmain,12.72,347
+50316,Hallwang,10.35,442
+50317,Henndorf am Wallersee,10.36,535
+50318,Hintersee,6.14,29
+50319,Hof bei Salzburg,10.79,391
+50320,Köstendorf,9.41,258
+50321,Koppl,8.13,302
+50322,Lamprechtshausen,7.35,302
+50323,Mattsee,11.14,394
+50324,Neumarkt am Wallersee,7.90,526
+50325,Nußdorf am Haunsberg,8.35,213
+50326,Oberndorf bei Salzburg,9.90,600
+50327,Obertrum am See,8.48,427
+50328,Plainfeld,8.99,116
+50329,St. Georgen bei Salzburg,7.53,243
+50330,St. Gilgen,11.90,481
+50331,Schleedorf,6.99,80
+50332,Seeham,7.86,160
+50335,Straßwalchen,6.72,551
+50336,Strobl,11.71,439
+50337,Thalgau,8.85,551
+50338,Wals-Siezenheim,8.78,"1,266"
+50339,Seekirchen am Wallersee,9.22,"1,079"
+50401,Altenmarkt im Pongau,8.42,396
+50402,Bad Hofgastein,11.88,793
+50403,Bad Gastein,13.17,528
+50404,Bischofshofen,11.11,"1,194"
+50405,Dorfgastein,9.11,159
+50406,Eben im Pongau,6.71,180
+50407,Filzmoos,8.23,124
+50408,Flachau,6.70,208
+50409,Forstau,8.56,48
+50410,Goldegg,7.27,199
+50411,Großarl,6.92,266
+50412,Hüttau,10.87,162
+50413,Hüttschlag,9.83,87
+50414,Kleinarl,9.01,75
+50415,Mühlbach am Hochkönig,12.62,177
+50416,Pfarrwerfen,8.88,232
+50417,Radstadt,9.52,480
+50418,St. Johann im Pongau,8.15,949
+50419,St. Martin am Tennengebirge,8.16,145
+50420,St. Veit im Pongau,8.65,341
+50421,Schwarzach im Pongau,10.70,379
+50422,Untertauern,6.22,28
+50423,Wagrain,10.20,324
+50424,Werfen,9.96,308
+50425,Werfenweng,5.07,56
+50501,Göriach,10.03,34
+50502,Lessach,8.49,46
+50503,Mariapfarr,13.68,343
+50504,Mauterndorf,15.27,243
+50505,Muhr,11.02,54
+50506,Ramingstein,10.38,110
+50507,St. Andrä im Lungau,11.85,91
+50508,St. Margarethen im Lungau,8.10,63
+50509,St. Michael im Lungau,10.32,364
+50510,Tamsweg,10.87,629
+50511,Thomatal,9.67,32
+50512,Tweng,10.57,26
+50513,Unternberg,8.69,89
+50514,Weißpriach,11.45,34
+50515,Zederhaus,9.10,107
+50601,Bramberg am Wildkogel,8.86,365
+50602,Bruck an der Großglocknerstraße,10.08,496
+50603,Dienten am Hochkönig,12.31,89
+50604,Fusch an der Großglocknerstraße,8.85,66
+50605,Hollersbach im Pinzgau,8.86,109
+50606,Kaprun,9.69,306
+50607,Krimml,10.96,90
+50608,Lend,10.56,136
+50609,Leogang,8.91,319
+50610,Lofer,13.34,281
+50611,Maishofen,9.33,342
+50612,Maria Alm am Steinernen Meer,9.40,213
+50613,Mittersill,9.73,557
+50614,Neukirchen am Großvenediger,9.09,244
+50615,Niedernsill,7.55,216
+50616,Piesendorf,10.23,395
+50617,Rauris,9.70,299
+50618,Saalbach-Hinterglemm,8.54,246
+50619,Saalfelden am Steinernen Meer,9.46,"1,637"
+50620,St. Martin bei Lofer,10.10,123
+50621,Stuhlfelden,8.37,130
+50622,Taxenbach,9.62,272
+50623,Unken,12.14,247
+50624,Uttendorf,8.94,274
+50625,Viehhofen,8.36,50
+50626,Wald im Pinzgau,8.57,97
+50627,Weißbach bei Lofer,8.89,37
+50628,Zell am See,10.76,"1,100"
+60101,Graz,8.88,"27,107"
+60305,Frauental an der Laßnitz,11.20,355
+60318,Lannach,9.95,365
+60323,Pölfing-Brunn,14.48,226
+60324,Preding,11.23,213
+60326,Sankt Josef (Weststeiermark),8.66,145
+60329,Sankt Peter im Sulmtal,10.70,136
+60341,Wettmannstätten,8.67,143
+60344,Deutschlandsberg,12.30,"1,446"
+60345,Eibiswald,12.25,754
+60346,Groß Sankt Florian,11.03,451
+60347,Sankt Martin im Sulmtal,12.23,367
+60348,Sankt Stefan ob Stainz,10.38,381
+60349,Bad Schwanberg,11.22,496
+60350,Stainz,10.78,947
+60351,Wies,12.19,524
+60608,Feldkirchen bei Graz,7.67,560
+60611,Gössendorf,10.76,454
+60613,Gratkorn,9.82,813
+60617,Hart bei Graz,9.20,509
+60618,Haselsdorf-Tobelbad,10.12,163
+60619,Hausmannstätten,10.20,388
+60623,Kainbach bei Graz,10.68,308
+60624,Kalsdorf bei Graz,7.01,632
+60626,Kumberg,8.59,339
+60628,Laßnitzhöhe,13.30,386
+60629,Lieboch,11.04,635
+60632,Peggau,10.86,264
+60639,Sankt Bartholomä,10.31,155
+60641,Sankt Oswald bei Plankenwarth,9.37,118
+60642,Sankt Radegund bei Graz,11.36,245
+60645,Semriach,11.77,370
+60646,Stattegg,11.26,341
+60647,Stiwoll,11.14,77
+60648,Thal,11.89,302
+60651,Übelbach,13.25,274
+60653,Vasoldsberg,11.86,568
+60654,Weinitzen,12.07,332
+60655,Werndorf,6.94,205
+60656,Wundschuh,9.62,162
+60659,Deutschfeistritz,9.59,425
+60660,Dobl-Zwaring,10.24,389
+60661,Eggersdorf bei Graz,9.16,671
+60662,Fernitz-Mellach,9.70,480
+60663,Frohnleiten,12.20,816
+60664,Gratwein-Straßengel,10.94,"1,400"
+60665,Hitzendorf,10.52,778
+60666,Nestelbach bei Graz,10.02,274
+60667,Raaba-Grambach,8.40,425
+60668,Sankt Marein bei Graz,8.85,332
+60669,Seiersberg-Pirka,8.37,"1,028"
+60670,Premstätten,8.96,643
+61001,Allerheiligen bei Wildon,13.07,211
+61002,Arnfels,13.75,132
+61007,Empersdorf,8.82,123
+61008,Gabersdorf,7.71,101
+61012,Gralla,8.07,232
+61013,Großklein,9.95,222
+61016,Heimschuh,10.42,208
+61017,Hengsberg,7.94,125
+61019,Kitzeck im Sausal,10.47,123
+61020,Lang,7.79,107
+61021,Lebring-Sankt Margarethen,9.34,211
+61024,Oberhaag,11.88,240
+61027,Ragnitz,8.74,144
+61030,Sankt Andrä-Höch,12.37,214
+61032,Sankt Johann im Saggautal,10.66,209
+61033,Sankt Nikolai im Sausal,10.75,252
+61043,Tillmitsch,8.79,348
+61045,Wagna,8.95,584
+61049,Ehrenhausen an der Weinstraße,10.29,248
+61050,Gamlitz,11.90,374
+61051,Gleinstätten,9.46,266
+61052,Heiligenkreuz am Waasen,9.67,283
+61053,Leibnitz,9.96,"1,346"
+61054,Leutschach an der Weinstraße,10.69,378
+61055,Sankt Georgen an der Stiefing,8.86,143
+61057,Schwarzautal,11.35,268
+61059,Wildon,9.71,558
+61060,Sankt Veit in der Südsteiermark,10.66,472
+61061,Straß in Steiermark,8.40,549
+61101,Eisenerz,23.23,781
+61105,Kalwang,18.37,191
+61106,Kammern im Liesingtal,13.70,229
+61107,Kraubath an der Mur,11.05,148
+61108,Leoben,12.30,"3,021"
+61109,Mautern in Steiermark,14.61,242
+61110,Niklasdorf,13.43,315
+61111,Proleb,12.30,191
+61112,Radmer,17.72,84
+61113,Sankt Michael in Obersteiermark,11.43,346
+61114,Sankt Peter-Freienstein,13.79,318
+61115,Sankt Stefan ob Leoben,12.39,225
+61116,Traboch,10.09,143
+61118,Vordernberg,17.14,162
+61119,Wald am Schoberpaß,17.80,94
+61120,Trofaiach,14.36,"1,584"
+61203,Aigen im Ennstal,10.05,276
+61204,Altaussee,16.31,312
+61205,Altenmarkt bei Sankt Gallen,14.38,112
+61206,Ardning,15.60,204
+61207,Bad Aussee,15.04,750
+61213,Gröbming,10.74,344
+61215,Grundlsee,15.92,188
+61217,Haus,10.32,253
+61222,Lassing,15.02,253
+61236,Ramsau am Dachstein,11.31,329
+61243,Selzthal,10.84,160
+61247,Trieben,13.35,440
+61251,Wildalpen,17.13,74
+61252,Wörschach,10.60,130
+61253,Admont,12.99,638
+61254,Aich,7.49,99
+61255,Bad Mitterndorf,11.64,578
+61256,Gaishorn am See,11.06,150
+61257,Irdning-Donnersbachtal,11.07,462
+61258,Landl,16.29,403
+61259,Liezen,11.57,943
+61260,Michaelerberg-Pruggern,8.81,112
+61261,Mitterberg-Sankt Martin,9.42,186
+61262,Öblarn,11.32,214
+61263,Rottenmann,12.82,636
+61264,Sankt Gallen,13.86,249
+61265,Schladming,11.84,778
+61266,Sölk,10.81,158
+61267,Stainach-Pürgg,14.08,382
+61410,Mühlen,12.38,107
+61413,Niederwölz,10.22,61
+61425,St. Peter am Kammersberg,12.39,245
+61428,Schöder,11.45,99
+61437,Krakau,10.26,139
+61438,Murau,15.17,505
+61439,Neumarkt in der Steiermark,13.07,628
+61440,Oberwölz,13.23,386
+61441,Ranten,10.31,115
+61442,Sankt Georgen am Kreischberg,11.76,196
+61443,Sankt Lambrecht,13.06,233
+61444,Scheifling,10.06,213
+61445,Stadl-Predlitz,12.08,202
+61446,Teufenbach-Katsch,11.73,215
+61611,Krottendorf-Gaisfeld,10.02,242
+61612,Ligist,9.96,322
+61615,Mooskirchen,10.24,228
+61618,Rosental an der Kainach,12.01,202
+61621,Sankt Martin am Wöllmißberg,10.51,83
+61624,Stallhofen,9.06,295
+61625,Voitsberg,13.28,"1,268"
+61626,Bärnbach,11.23,662
+61627,Edelschrott,13.66,224
+61628,Geistthal-Södingberg,10.11,144
+61629,Hirschegg-Pack,12.25,123
+61630,Kainach bei Voitsberg,11.46,173
+61631,Köflach,14.46,"1,372"
+61632,Maria Lankowitz,12.76,345
+61633,Söding-Sankt Johann,9.23,402
+61701,Albersdorf-Prebuch,6.86,157
+61708,Fischbach,10.11,151
+61710,Floing,10.01,120
+61711,Gasen,10.02,85
+61716,Markt Hartmannsdorf,8.84,265
+61719,Hofstätten an der Raab,8.32,197
+61727,Ludersdorf-Wilfersdorf,6.66,172
+61728,Miesenbach bei Birkfeld,8.86,59
+61729,Mitterdorf an der Raab,8.55,183
+61730,Mortantsch,8.20,186
+61731,Naas,9.31,123
+61740,Puch bei Weiz,10.54,216
+61741,Ratten,15.46,168
+61743,Rettenegg,15.12,104
+61744,St. Kathrein am Hauenstein,11.91,73
+61745,Sankt Kathrein am Offenegg,12.36,132
+61746,St. Margarethen an der Raab,10.74,451
+61748,Sinabelkirchen,7.59,341
+61750,Strallegg,9.98,190
+61751,Thannhausen,9.52,231
+61756,Anger,9.82,392
+61757,Birkfeld,11.31,559
+61758,Fladnitz an der Teichalm,10.51,189
+61759,Gersdorf an der Feistritz,9.80,171
+61760,Gleisdorf,9.36,"1,079"
+61761,Gutenberg,8.04,132
+61762,Ilztal,9.81,220
+61763,Passail,11.80,515
+61764,Pischelsdorf am Kulm,10.39,405
+61765,Sankt Ruprecht an der Raab,6.88,391
+61766,Weiz,11.46,"1,388"
+62007,Fohnsdorf,14.50,"1,111"
+62008,Gaal,10.76,140
+62010,Hohentauern,14.25,53
+62014,Kobenz,11.81,247
+62021,Pusterwald,14.79,63
+62026,Sankt Georgen ob Judenburg,14.22,117
+62032,Sankt Peter ob Judenburg,16.35,183
+62034,Seckau,10.78,143
+62036,Unzmarkt-Frauenburg,15.38,196
+62038,Zeltweg,12.18,852
+62039,Lobmingtal,10.99,200
+62040,Judenburg,13.73,"1,319"
+62041,Knittelfeld,11.99,"1,543"
+62042,Obdach,11.40,432
+62043,Pöls-Oberkurzheim,14.34,396
+62044,Pölstal,13.60,342
+62045,Sankt Marein-Feistritz,10.98,219
+62046,Sankt Margarethen bei Knittelfeld,12.12,323
+62047,Spielberg,10.58,566
+62048,Weißkirchen in Steiermark,11.46,545
+62105,Breitenau am Hochlantsch,17.17,268
+62115,Krieglach,12.30,669
+62116,Langenwang,12.99,507
+62125,Pernegg an der Mur,13.26,341
+62128,Sankt Lorenzen im Mürztal,11.31,426
+62131,Spital am Semmering,16.71,238
+62132,Stanz im Mürztal,11.53,204
+62135,Turnau,14.94,232
+62138,Aflenz,13.95,341
+62139,Bruck an der Mur,13.70,"2,156"
+62140,Kapfenberg,12.28,"2,691"
+62141,Kindberg,13.08,"1,066"
+62142,Mariazell,15.37,545
+62143,Mürzzuschlag,17.04,"1,332"
+62144,Neuberg an der Mürz,15.16,341
+62145,Sankt Barbara im Mürztal,14.85,952
+62146,Sankt Marein im Mürztal,10.11,291
+62147,Thörl,14.31,309
+62148,Tragöß-Sankt Katharein,13.34,239
+62202,Bad Blumau,9.87,165
+62205,Buch-St. Magdalena,9.66,212
+62206,Burgau,13.62,148
+62209,Ebersdorf,8.59,112
+62211,Friedberg,10.01,268
+62214,Greinbach,9.05,168
+62216,Großsteinbach,8.48,110
+62219,Hartberg,13.03,876
+62220,Hartberg Umgebung,8.66,192
+62226,Lafnitz,10.96,159
+62232,Ottendorf an der Rittschein,7.94,128
+62233,Pinggau,9.41,290
+62235,Pöllauberg,9.86,194
+62242,Sankt Jakob im Walde,9.11,93
+62244,Sankt Johann in der Haide,10.34,240
+62245,Sankt Lorenzen am Wechsel,11.65,165
+62247,Schäffern,9.02,121
+62256,Stubenberg,12.95,288
+62262,Wenigzell,9.64,132
+62264,Bad Waltersdorf,9.40,374
+62265,Dechantskirchen,9.63,193
+62266,Feistritztal,10.33,240
+62268,Grafendorf bei Hartberg,8.96,291
+62269,Großwilfersdorf,9.42,198
+62270,Hartl,7.88,167
+62271,Ilz,9.45,363
+62272,Kaindorf,9.80,297
+62273,Bad Loipersdorf,10.59,193
+62274,Neudau,8.01,121
+62275,Pöllau,10.59,624
+62276,Rohr bei Hartberg,10.31,144
+62277,Rohrbach an der Lafnitz,10.65,278
+62278,Vorau,11.44,525
+62279,Waldbach-Mönichwald,11.90,165
+62280,Fürstenfeld,12.64,"1,313"
+62311,Edelsbach bei Feldbach,9.37,127
+62314,Eichkögl,7.57,105
+62326,Halbenrain,13.38,227
+62330,Jagerberg,10.14,161
+62332,Kapfenstein,9.74,146
+62335,Klöch,13.60,158
+62343,Mettersdorf am Saßbach,15.22,207
+62368,Tieschen,12.24,146
+62372,Unterlamm,9.49,120
+62375,Bad Gleichenberg,12.81,670
+62376,Bad Radkersburg,15.93,513
+62377,Deutsch Goritz,11.24,200
+62378,Fehring,12.48,892
+62379,Feldbach,10.53,"1,421"
+62380,Gnas,10.62,634
+62381,Kirchbach-Zerlach,9.75,312
+62382,Kirchberg an der Raab,9.47,433
+62383,Mureck,12.50,438
+62384,Paldau,9.07,285
+62385,Pirching am Traubenberg,8.40,211
+62386,Riegersburg,9.88,489
+62387,Sankt Anna am Aigen,11.06,260
+62388,Sankt Peter am Ottersbach,11.10,320
+62389,Sankt Stefan im Rosental,9.91,376
+62390,Straden,11.97,407
+70101,Innsbruck,10.32,"13,676"
+70201,Arzl im Pitztal,8.89,284
+70202,Haiming,8.32,406
+70203,Imst,9,"1,007"
+70204,Imsterberg,6.61,55
+70205,Jerzens,8.10,72
+70206,Karres,8.05,50
+70207,Karrösten,8.60,62
+70208,Längenfeld,5.97,293
+70209,Mieming,9.53,376
+70210,Mils bei Imst,8.70,58
+70211,Mötz,7.75,107
+70212,Nassereith,10.78,244
+70213,Obsteig,8.70,127
+70214,Oetz,9.17,221
+70215,Rietz,6.99,176
+70216,Roppen,7.97,157
+70217,St. Leonhard im Pitztal,7.10,103
+70218,Sautens,9.01,145
+70219,Silz,9.79,257
+70220,Sölden,7.63,235
+70221,Stams,8.32,131
+70222,Tarrenz,7.96,224
+70223,Umhausen,6.40,226
+70224,Wenns,7.64,165
+70301,Absam,10.39,762
+70302,Aldrans,9.41,266
+70303,Ampass,8.26,151
+70304,Axams,10.58,673
+70305,Baumkirchen,7.93,100
+70306,Birgitz,10.49,155
+70307,Ellbögen,9.66,114
+70308,Flaurling,8.15,108
+70309,Fritzens,7.85,172
+70310,Fulpmes,8.61,398
+70311,Gnadenwald,8.74,75
+70312,Götzens,8.91,376
+70313,Gries am Brenner,9.32,125
+70314,Gries im Sellrain,8.85,56
+70315,Grinzens,8.46,126
+70317,Gschnitz,9.66,45
+70318,Hatting,7.98,119
+70319,Inzing,7.77,322
+70320,Kematen in Tirol,7.05,234
+70322,Kolsass,8.36,140
+70323,Kolsassberg,8.30,73
+70325,Lans,9.12,109
+70326,Leutasch,9.49,242
+70328,Mieders,8.15,163
+70329,Mils,12.03,568
+70331,Mutters,9.48,219
+70332,Natters,12.28,266
+70333,Navis,8.67,178
+70334,Neustift im Stubaital,8.26,413
+70335,Oberhofen im Inntal,7.89,154
+70336,Obernberg am Brenner,7.56,30
+70337,Oberperfuss,9.48,299
+70338,Patsch,9.95,114
+70339,Pettnau,8.36,94
+70340,Pfaffenhofen,8.33,109
+70342,Polling in Tirol,6,83
+70343,Ranggen,7.89,90
+70344,Reith bei Seefeld,7.95,125
+70345,Rinn,7.89,152
+70346,Rum,11.62,"1,103"
+70347,St. Sigmund im Sellrain,11.30,20
+70348,Scharnitz,10.88,154
+70349,Schmirn,9.20,80
+70350,Schönberg im Stubaital,8.75,94
+70351,Seefeld in Tirol,12.14,439
+70352,Sellrain,11.24,152
+70353,Sistrans,11.35,261
+70354,Hall in Tirol,10.53,"1,548"
+70355,Steinach am Brenner,10.24,375
+70356,Telfes im Stubai,9.84,160
+70357,Telfs,8.21,"1,350"
+70358,Thaur,8.22,359
+70359,Trins,8.20,114
+70360,Tulfes,7.48,130
+70361,Unterperfuss,27.64,68
+70362,Vals,9.60,51
+70364,Völs,12.66,929
+70365,Volders,8.30,384
+70366,Wattenberg,6.43,51
+70367,Wattens,10.42,848
+70368,Wildermieming,8.85,90
+70369,Zirl,8.23,679
+70370,Matrei am Brenner,11.54,411
+70401,Aurach bei Kitzbühel,13.73,155
+70402,Brixen im Thale,11.08,299
+70403,Fieberbrunn,11.62,529
+70404,Going am Wilden Kaiser,9.90,196
+70405,Hochfilzen,8.37,111
+70406,Hopfgarten im Brixental,9.89,578
+70407,Itter,10.03,118
+70408,Jochberg,11.87,180
+70409,Kirchberg in Tirol,12.29,640
+70410,Kirchdorf in Tirol,9.39,393
+70411,Kitzbühel,14.76,"1,222"
+70412,Kössen,10.08,464
+70413,Oberndorf in Tirol,12.36,294
+70414,Reith bei Kitzbühel,15.56,274
+70415,St. Jakob in Haus,8.84,74
+70416,St. Johann in Tirol,10.58,"1,046"
+70417,St. Ulrich am Pillersee,7.95,155
+70418,Schwendt,7.38,68
+70419,Waidring,10.89,227
+70420,Westendorf,11.23,421
+70501,Alpbach,9.31,237
+70502,Angath,7.60,77
+70503,Bad Häring,9.24,278
+70504,Brandenberg,11.43,173
+70505,Breitenbach am Inn,8.95,319
+70506,Brixlegg,9.68,302
+70508,Ebbs,10.29,614
+70509,Ellmau,10.43,308
+70510,Erl,9.92,161
+70511,Kirchbichl,10.58,638
+70512,Kramsach,9.91,504
+70513,Kufstein,8.90,"1,799"
+70514,Kundl,8.26,413
+70515,Langkampfen,8.68,376
+70516,Mariastein,4.10,19
+70517,Münster,8.25,297
+70518,Niederndorf,9.07,264
+70519,Niederndorferberg,6.61,48
+70520,Radfeld,6.73,171
+70521,Rattenberg,10.17,47
+70522,Reith im Alpbachtal,8.96,257
+70523,Rettenschöss,7.79,44
+70524,Scheffau am Wilden Kaiser,12.91,199
+70525,Schwoich,8.70,230
+70526,Söll,8.36,316
+70527,Thiersee,10.04,319
+70528,Angerberg,10.01,197
+70529,Walchsee,8.33,183
+70530,Wildschönau,9.99,440
+70531,Wörgl,8.42,"1,214"
+70601,Faggen,6.80,27
+70602,Fendels,6.19,18
+70603,Fiss,6.44,68
+70604,Fließ,7.31,227
+70605,Flirsch,9.91,100
+70606,Galtür,8.87,70
+70607,Grins,12.87,179
+70608,Ischgl,6.30,103
+70609,Kappl,8.32,212
+70610,Kaunerberg,9.65,44
+70611,Kaunertal,8.70,55
+70612,Kauns,10.56,58
+70613,Ladis,8.76,48
+70614,Landeck,10.40,802
+70615,Nauders,8.07,126
+70616,Pettneu am Arlberg,8.21,119
+70617,Pfunds,9.13,236
+70618,Pians,10.51,84
+70619,Prutz,8.36,157
+70620,Ried im Oberinntal,9.16,124
+70621,St. Anton am Arlberg,10.69,248
+70622,Schönwies,9.74,172
+70623,See,6.08,76
+70624,Serfaus,8.99,109
+70625,Spiss,8.25,8
+70626,Stanz bei Landeck,7.19,42
+70627,Strengen,8.44,101
+70628,Tobadill,9.60,48
+70629,Tösens,7.49,56
+70630,Zams,10.82,391
+70701,Abfaltersbach,9.13,59
+70702,Ainet,9.52,87
+70703,Amlach,6.63,35
+70704,Anras,8.60,104
+70705,Assling,11.79,204
+70706,Außervillgraten,11.89,85
+70707,Dölsach,10.18,236
+70708,Gaimberg,11.10,96
+70709,Hopfgarten in Defereggen,13.01,86
+70710,Innervillgraten,9.83,89
+70711,Iselsberg-Stronach,9.48,58
+70712,Kals am Großglockner,8.37,93
+70713,Kartitsch,14.76,112
+70714,Lavant,2.59,9
+70715,Leisach,11.76,86
+70716,Lienz,13.51,"1,636"
+70717,Matrei in Osttirol,10.18,470
+70718,Nikolsdorf,10.87,94
+70719,Nußdorf-Debant,11.19,382
+70720,Oberlienz,9.09,135
+70721,Obertilliach,12.71,85
+70723,Prägraten am Großvenediger,8.64,98
+70724,St. Jakob in Defereggen,12.79,105
+70725,St. Johann im Walde,7.80,23
+70726,St. Veit in Defereggen,10.06,62
+70727,Schlaiten,8.10,38
+70728,Sillian,10.55,214
+70729,Strassen,9.52,77
+70731,Thurn,11.15,72
+70732,Tristach,10.60,159
+70733,Untertilliach,11.74,25
+70734,Virgen,8.12,182
+70735,Heinfels,9.16,94
+70801,Bach,6.23,41
+70802,Berwang,10.16,64
+70803,Biberwier,11.28,75
+70804,Bichlbach,12.85,102
+70805,Breitenwang,11.46,165
+70806,Ehenbichl,15.49,130
+70807,Ehrwald,13.66,358
+70808,Elbigenalp,9.75,86
+70809,Elmen,9.64,38
+70810,Forchach,10.85,28
+70811,Grän,8.92,57
+70812,Gramais,20.93,9
+70813,Häselgehr,9.77,68
+70814,Heiterwang,9.91,55
+70815,Hinterhornbach,15.73,14
+70816,Höfen,12.12,156
+70817,Holzgau,12.44,48
+70818,Jungholz,12.37,37
+70819,Kaisers,12.68,9
+70820,Lechaschau,9.79,203
+70821,Lermoos,11,127
+70822,Musau,11.52,44
+70823,Namlos,9.26,5
+70824,Nesselwängle,10.32,48
+70825,Pfafflar,9.68,9
+70826,Pflach,8.23,137
+70827,Pinswang,8.49,36
+70828,Reutte,10.08,737
+70829,Schattwald,9.03,42
+70830,Stanzach,10.29,53
+70831,Steeg,7,45
+70832,Tannheim,8.37,98
+70833,Vils,10.35,157
+70834,Vorderhornbach,10.04,28
+70835,Wängle,9.41,94
+70836,Weißenbach am Lech,9.18,115
+70837,Zöblen,13.81,33
+70901,Achenkirch,11.80,264
+70902,Aschau im Zillertal,7.26,137
+70903,Brandberg,6.79,26
+70904,Bruck am Ziller,9.16,104
+70905,Buch in Tirol,9.85,257
+70907,Eben am Achensee,8.79,313
+70908,Finkenberg,10.90,155
+70909,Fügen,9.78,422
+70910,Fügenberg,7.05,106
+70911,Gallzein,5.74,40
+70912,Gerlos,9.97,79
+70913,Gerlosberg,6.67,32
+70914,Hainzenberg,8.27,62
+70915,Hart im Zillertal,7.13,120
+70916,Hippach,7.59,109
+70917,Jenbach,9.38,717
+70918,Kaltenbach,8.42,109
+70920,Mayrhofen,10.53,419
+70921,Pill,8.60,110
+70922,Ramsau im Zillertal,6.70,117
+70923,Ried im Zillertal,7.77,96
+70924,Rohrberg,7.48,44
+70925,Schlitters,7.84,125
+70926,Schwaz,10.26,"1,485"
+70927,Schwendau,8.28,148
+70928,Stans,8.33,187
+70929,Steinberg am Rofan,16.78,50
+70930,Strass im Zillertal,9.38,79
+70931,Stumm,8.14,156
+70932,Stummerberg,8.63,75
+70933,Terfens,7.53,173
+70934,Tux,8.42,161
+70935,Uderns,7.06,143
+70936,Vomp,8.49,465
+70937,Weer,7.43,136
+70938,Weerberg,7.98,205
+70939,Wiesing,8.99,200
+70940,Zell am Ziller,13.77,242
+70941,Zellberg,10.27,68
+80101,Bartholomäberg,9.01,218
+80102,Blons,8.55,30
+80103,Bludenz,9.99,"1,509"
+80104,Bludesch,5.98,156
+80105,Brand,9.42,71
+80106,Bürs,8.76,302
+80107,Bürserberg,9.72,60
+80108,Dalaas,10.33,168
+80109,Fontanella,6.41,30
+80110,Gaschurn,10.25,161
+80111,Innerbraz,11,120
+80112,Klösterle,10.79,72
+80113,Lech,10.20,160
+80114,Lorüns,10.16,31
+80115,Ludesch,6.98,258
+80116,Nenzing,9.19,600
+80117,Nüziders,10.97,544
+80118,Raggal,8.08,73
+80119,St. Anton im Montafon,9.20,67
+80120,St. Gallenkirch,11.39,253
+80121,St. Gerold,6.57,26
+80122,Schruns,12.50,500
+80123,Silbertal,8.01,68
+80124,Sonntag,8.01,50
+80125,Stallehr,8.80,25
+80126,Thüringen,8.56,200
+80127,Thüringerberg,8.46,63
+80128,Tschagguns,10.63,240
+80129,Vandans,9.44,267
+80201,Alberschwende,7.34,245
+80202,Andelsbuch,7.17,194
+80203,Au,8.50,162
+80204,Bezau,9.59,195
+80205,Bildstein,7.59,63
+80206,Bizau,9.61,107
+80207,Bregenz,10.33,"3,046"
+80208,Buch,9.03,54
+80209,Damüls,8.26,28
+80210,Doren,9.45,99
+80211,Egg,8.19,309
+80212,Eichenberg,6.68,28
+80213,Fußach,8.43,344
+80214,Gaißau,10.66,201
+80215,Hard,9.07,"1,237"
+80216,Hittisau,7.69,159
+80217,Höchst,9.15,784
+80218,Hörbranz,9.84,662
+80219,Hohenweiler,7.87,112
+80220,Kennelbach,12.26,228
+80221,Krumbach,9.64,107
+80222,Langen bei Bregenz,8.93,134
+80223,Langenegg,7.50,89
+80224,Lauterach,8.11,857
+80225,Lingenau,6.90,110
+80226,Lochau,12.29,823
+80227,Mellau,8.90,116
+80228,Mittelberg,10.36,526
+80229,Möggers,5.01,28
+80230,Reuthe,6.56,44
+80231,Riefensberg,7.48,80
+80232,Schnepfau,7.84,38
+80233,Schoppernau,12.54,118
+80234,Schröcken,9.72,21
+80235,Schwarzach,11,424
+80236,Schwarzenberg,8.68,165
+80237,Sibratsgfäll,11.37,54
+80238,Sulzberg,8.31,154
+80239,Warth,4.89,9
+80240,Wolfurt,9.08,813
+80301,Dornbirn,9.11,"4,748"
+80302,Hohenems,8.73,"1,522"
+80303,Lustenau,8.78,"2,161"
+80401,Altach,8.10,583
+80402,Düns,7.19,32
+80403,Dünserberg,5.84,9
+80404,Feldkirch,8.78,"3,222"
+80405,Frastanz,8.76,584
+80406,Fraxern,6.38,49
+80407,Göfis,9.60,320
+80408,Götzis,8.91,"1,105"
+80409,Klaus,8.33,256
+80410,Koblach,7.36,365
+80411,Laterns,8.39,59
+80412,Mäder,7.46,317
+80413,Meiningen,6.60,167
+80414,Rankweil,10.07,"1,224"
+80415,Röns,11.03,43
+80416,Röthis,10.36,232
+80417,Satteins,10.04,281
+80418,Schlins,7.60,197
+80419,Schnifis,6.71,54
+80420,Sulz,9.22,250
+80421,Übersaxen,9.65,60
+80422,Viktorsberg,7.53,33
+80423,Weiler,7.44,171
+80424,Zwischenwasser,8.48,290
+90101,Wien-Innere Stadt,14.33,"2,333"
+90201,Wien-Leopoldstadt,7.13,"8,033"
+90301,Wien-Landstraße,7.88,"7,789"
+90401,Wien-Wieden,8.84,"2,957"
+90501,Wien-Margareten,6.65,"3,631"
+90601,Wien-Mariahilf,8.17,"2,539"
+90701,Wien-Neubau,7.66,"2,399"
+90801,Wien-Josefstadt,8.73,"2,117"
+90901,Wien-Alsergrund,8,"3,332"
+91001,Wien-Favoriten,7.24,"16,149"
+91101,Wien-Simmering,6.65,"7,459"
+91201,Wien-Meidling,7.48,"7,661"
+91301,Wien-Hietzing,13.70,"7,686"
+91401,Wien-Penzing,9.67,"9,577"
+91501,Wien-Rudolfsheim-Fünfhaus,6.56,"4,980"
+91601,Wien-Ottakring,7.60,"7,806"
+91701,Wien-Hernals,8.33,"4,727"
+91801,Wien-Währing,9.66,"4,962"
+91901,Wien-Döbling,12.80,"9,736"
+92001,Wien-Brigittenau,7.45,"6,480"
+92101,Wien-Floridsdorf,8.10,"15,354"
+92201,Wien-Donaustadt,7.10,"16,199"
+92301,Wien-Liesing,10.06,"12,450"
