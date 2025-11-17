@@ -42,28 +42,73 @@ leaflet(bez_merge) %>%
       weight = 2,
       color = "#666",
       fillOpacity = 0.9,
-      bringToFront = TRUE
-    ),
+      bringToFront = TRUE),
     
     # popup information
     popup = ~paste0(
       "<strong>", name, "</strong><br/>",
-      get(value_column), "% age 75 and older."
-    ),
+      get(value_column), "% age 75 and older."),
     
-    # label on hover
-    label = ~paste0(percent, ": ", get(value_column)),
-    labelOptions = labelOptions(
-      style = list("font-weight" = "normal", padding = "3px 8px"),
-      textsize = "13px",
-      direction = "auto"
-    )
-  ) %>%
+  #   # label on hover
+  #   label = ~paste0(percent, ": ", get(value_column)),
+  #   labelOptions = labelOptions(
+  #     style = list("font-weight" = "normal", padding = "3px 8px"),
+  #     textsize = "13px",
+  #     direction = "auto")) 
+  )%>%
   addLegend(
     pal = pal,
     values = bez_merge[[value_column]],
     opacity = 0.8,
-    title = value_column,
+    title = "Pop. | % 75+",
+    position = "bottomright"
+  )
+
+#mapping pop number
+
+value_column <- "abs"
+
+pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = bez_merge[[value_column]],
+  na.color = "#cccccc"
+)
+
+# 4. Build the interactive leaflet map // Bezirke
+leaflet(bez_merge) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(
+    fillColor = ~pal(get(value_column)),
+    weight = 1,
+    opacity = 1,
+    color = "white",
+    dashArray = "1",
+    fillOpacity = 0.7,
+    
+    # highlight on hover
+    highlight = highlightOptions(
+      weight = 2,
+      color = "#666",
+      fillOpacity = 0.9,
+      bringToFront = TRUE),
+    
+    # popup information
+    popup = ~paste0(
+      "<strong>", name, "</strong><br/>",
+      get(value_column), " inhabitants age 75 and older."),
+    
+    #   # label on hover
+    #   label = ~paste0(percent, ": ", get(value_column)),
+    #   labelOptions = labelOptions(
+    #     style = list("font-weight" = "normal", padding = "3px 8px"),
+    #     textsize = "13px",
+    #     direction = "auto")) 
+  )%>%
+  addLegend(
+    pal = pal,
+    values = bez_merge[[value_column]],
+    opacity = 0.8,
+    title = "Pop.75+",
     position = "bottomright"
   )
 
@@ -72,17 +117,10 @@ leaflet(bez_merge) %>%
 gem_url <- "https://raw.githubusercontent.com/lancerowen23/Lifties_Austria/main/austria_gemeinden_simplified.geojson"  
 gemeinden <- st_read(gem_url, quiet = FALSE)
 
-gem_csv <- read_csv('Desktop/Lifties_Austria/pop_75andUp_gem.csv',
-                    locale = locale(encoding = "UTF-8"))
-
-gem_csv <- readr::read_csv('Desktop/Lifties_Austria/pop_75andUp_gem.csv', locale = locale(encoding = "UTF-8"))
-View(gem_csv)                   
+gem_csv <- read.csv('Desktop/Lifties_Austria/pop_75andUp_gem.csv', encoding = "UTF-8")
 
 #join data
 gem_merge <- merge(gemeinden, gem_csv, by.x="g_id", by.y="id")
-
-#create map
-# 1. Load your merged GeoJSON
 
 # 2. Choose a numeric column to visualize
 # Replace "my_value" with the column from your CSV you want to map
@@ -120,19 +158,69 @@ leaflet(gem_merge) %>%
       get(value_column), "% age 75 and older."
     ),
     
-    # label on hover
-    label = ~paste0(percent, ": ", get(value_column)),
-    labelOptions = labelOptions(
-      style = list("font-weight" = "normal", padding = "3px 8px"),
-      textsize = "13px",
-      direction = "auto"
-    )
+    # # label on hover
+    # label = ~paste0(percent, ": ", get(value_column)),
+    # labelOptions = labelOptions(
+    #   style = list("font-weight" = "normal", padding = "3px 8px"),
+    #   textsize = "13px",
+    #   direction = "auto"
+    # )
   ) %>%
   addLegend(
     pal = pal,
     values = gem_merge[[value_column]],
     opacity = 0.7,
-    title = value_column,
+    title = "Pop. | % 75+",
+    position = "bottomright"
+  )
+
+## Pop Numbers
+value_column <- "abs"
+
+# 3. Create a color palette for choropleth
+pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = gem_merge[[value_column]],
+  na.color = "#cccccc"
+)
+
+leaflet(gem_merge) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(
+    fillColor = ~pal(get(value_column)),
+    weight = 1,
+    opacity = 1,
+    color = "white",
+    dashArray = "3",
+    fillOpacity = 0.7,
+    
+    # highlight on hover
+    highlight = highlightOptions(
+      weight = 2,
+      color = "#666",
+      fillOpacity = 0.9,
+      bringToFront = TRUE
+    ),
+    
+    # popup information
+    popup = ~paste0(
+      "<strong>", name, "</strong><br/>",
+      get(value_column), " inhabitants age 75+."
+    ),
+    
+    # # label on hover
+    # label = ~paste0(percent, ": ", get(value_column)),
+    # labelOptions = labelOptions(
+    #   style = list("font-weight" = "normal", padding = "3px 8px"),
+    #   textsize = "13px",
+    #   direction = "auto"
+    # )
+  ) %>%
+  addLegend(
+    pal = pal,
+    values = gem_merge[[value_column]],
+    opacity = 0.7,
+    title = "Pop. | % 75+",
     position = "bottomright"
   )
 
