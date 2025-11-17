@@ -34,7 +34,7 @@ leaflet(bez_merge) %>%
     weight = 1,
     opacity = 1,
     color = "white",
-    dashArray = "3",
+    dashArray = "1",
     fillOpacity = 0.7,
     
     # highlight on hover
@@ -62,7 +62,7 @@ leaflet(bez_merge) %>%
   addLegend(
     pal = pal,
     values = bez_merge[[value_column]],
-    opacity = 0.7,
+    opacity = 0.8,
     title = value_column,
     position = "bottomright"
   )

@@ -1,0 +1,102 @@
+Package Buildings and Dwellings Register - Political Districts
+Source: Statistics Austria
+Date: 2025-01-01
+created: 2025-06-23
+ 
+https://www.statistik.at/en/about-us/responsibilities-and-principles/legal-basis/legal-notice
+https://www.statistik.at/en/about-us/responsibilities-and-principles/legal-basis/website-information
+
+Table;Column;Characteristic;Value
+daten_gwr.v_geb_;geb;Number of buildings;Number
+daten_gwr.v_geb_;gebmwhg;Number of buildings with dwellings;Number
+daten_gwr.v_geb_;whg;Number of dwellings;Number
+daten_gwr.v_geb_;wgeb;Number of residential buildings;Number
+daten_gwr.v_geb_;ntz;Number of usage units;Number
+daten_gwr.v_geb_;wgeb_1whg;Buildings by building use;Residential buildings with one conventional dwelling
+daten_gwr.v_geb_;wgeb_2whg;Buildings by building use;Residential buildings with two conventional dwellings
+daten_gwr.v_geb_;wgeb_3pwhg;Buildings by building use;Residential buildings with three or more conventional dwellings
+daten_gwr.v_geb_;wgeb_gem;Buildings by building use;Buildings for institutional households
+daten_gwr.v_geb_;geb_hotel;Buildings by building use;Hotels and similar buildings
+daten_gwr.v_geb_;geb_buero;Buildings by building use;Office buildings
+daten_gwr.v_geb_;geb_handel;Buildings by building use;Wholesale and retail trade buildings
+daten_gwr.v_geb_;geb_verkehr;Buildings by building use;Traffic and communication buildings
+daten_gwr.v_geb_;geb_indust;Buildings by building use;Industrial buildings and warehouses
+daten_gwr.v_geb_;geb_kultur;Buildings by building use;Buildings for public entertainment, education and health care
+daten_gwr.v_geb_;geb_sonst;Buildings by building use;other buildings
+daten_gwr.v_geb_;geb_unbekannt;Buildings by building use;unknown
+daten_gwr.v_geb_;bp_vor1919;Buildings by construction period;before 1919
+daten_gwr.v_geb_;bp_1919b1944;Buildings by construction period;1919 to 1944
+daten_gwr.v_geb_;bp_1945b1960;Buildings by construction period;1945 to 1960
+daten_gwr.v_geb_;bp_1961b1970;Buildings by construction period;1961 to 1970
+daten_gwr.v_geb_;bp_1971b1980;Buildings by construction period;1971 to 1980
+daten_gwr.v_geb_;bp_1981b1990;Buildings by construction period;1981 to 1990
+daten_gwr.v_geb_;bp_1991b2000;Buildings by construction period;1991 to 2000
+daten_gwr.v_geb_;bp_2001b2005;Buildings by construction period;2001 to 2005
+daten_gwr.v_geb_;bp_2006b2010;Buildings by construction period;2006 to 2010
+daten_gwr.v_geb_;bp_2011b2015;Buildings by construction period;2011 to 2015
+daten_gwr.v_geb_;bp_2016b2020;Buildings by construction period;2016-2020
+daten_gwr.v_geb_;bp_2021b2025;Buildings by construction period;2021-2025
+daten_gwr.v_geb_;bp_unbekannt;Buildings by construction period;unknown
+daten_gwr.v_geb_;gfl_lt50;Buildings by gross area;less than 50m²
+daten_gwr.v_geb_;gfl_50b74;Buildings by gross area;50m² to 75m²
+daten_gwr.v_geb_;gfl_75b99;Buildings by gross area;75m² to 100m²
+daten_gwr.v_geb_;gfl_100b149;Buildings by gross area;100m² to 150m²
+daten_gwr.v_geb_;gfl_150b249;Buildings by gross area;150m² to 250m²
+daten_gwr.v_geb_;gfl_250b499;Buildings by gross area;250m² to 500m²
+daten_gwr.v_geb_;gfl_500b999;Buildings by gross area;500m² to 1000m²
+daten_gwr.v_geb_;gfl_ge1000;Buildings by gross area;more than 1000m²
+daten_gwr.v_geb_;gfl_unbekannt;Buildings by gross area;unknown
+daten_gwr.v_geb_;rwg_01b02;Buildings by residential use and number of dwellings;Purely Residential buildings (100% residential) with 1 or 2 dwellings
+daten_gwr.v_geb_;rwg_03b10;Buildings by residential use and number of dwellings;Purely Residential buildings (100% residential) with 3 to 10 dwellings
+daten_gwr.v_geb_;rwg_11b20;Buildings by residential use and number of dwellings;Purely Residential buildings (100% residential) with 11 to 20 dwellings
+daten_gwr.v_geb_;rwg_21p;Buildings by residential use and number of dwellings;Purely Residential buildings (100% residential) with 21 or more dwellings
+daten_gwr.v_geb_;rwg_gem;Buildings by residential use and number of dwellings;Purely Residential buildings (100% residential) purely residential buildings belonging to associations (incl. other residential use)
+daten_gwr.v_geb_;wgnn_01b02;Buildings by residential use and number of dwellings;Residential buildings with other uses (>=50% residential) with 1 or 2 dwellings
+daten_gwr.v_geb_;wgnn_03b10;Buildings by residential use and number of dwellings;Residential buildings with other uses (>=50% residential) with with 3 to 10 dwellings
+daten_gwr.v_geb_;wgnn_11b20;Buildings by residential use and number of dwellings;Residential buildings with other uses (>=50% residential) with with 11 to 20 dwellings
+daten_gwr.v_geb_;wgnn_21p;Buildings by residential use and number of dwellings;Residential buildings with other uses (>=50% residential) with with 21 or more dwellings
+daten_gwr.v_geb_;wgnn_gem;Buildings by residential use and number of dwellings;Residential buildings with other uses (>=50% residential) with residential buildings belonging to associations with other uses
+daten_gwr.v_geb_;nwg_01b02;Buildings by residential use and number of dwellings;Non residential buildings (<50% residential) with 1 or 2 dwellings
+daten_gwr.v_geb_;nwg_03b10;Buildings by residential use and number of dwellings;Non residential buildings (<50% residential) with with 3 to 10 dwellings
+daten_gwr.v_geb_;nwg_11b20;Buildings by residential use and number of dwellings;Non residential buildings (<50% residential) with with 11 to 20 dwellings
+daten_gwr.v_geb_;nwg_21p;Buildings by residential use and number of dwellings;Non residential buildings (<50% residential) with with 21 or more dwellings
+daten_gwr.v_geb_;nwg_gem;Buildings by residential use and number of dwellings;Non residential buildings without dwellings
+daten_gwr.v_geb_;nwg_unbekannt;Buildings by residential use and number of dwellings;unknown
+daten_gwr.v_geb_;nurhws;Buildings by type of residence;Buildings with only persons with main residence
+daten_gwr.v_geb_;nurnws;Buildings by type of residence;Buildings with only persons with secondary residence
+daten_gwr.v_geb_;hwsnws;Buildings by type of residence;Buildings with both persons with main residence and persons with secondary residence
+daten_gwr.v_geb_;ohnews;Buildings by type of residence;Buildings without residents
+daten_gwr.v_whg_;fl_lt45;Dwellings by floor space;less than 45m²
+daten_gwr.v_whg_;fl_45b60;Dwellings by floor space;45m² to 60m²
+daten_gwr.v_whg_;fl_60b75;Dwellings by floor space;60m² to 75m²
+daten_gwr.v_whg_;fl_75b90;Dwellings by floor space;75m² to 90m²
+daten_gwr.v_whg_;fl_90b120;Dwellings by floor space;90m² to 120m²
+daten_gwr.v_whg_;fl_120b150;Dwellings by floor space;120m² to 150m²
+daten_gwr.v_whg_;fl_150b200;Dwellings by floor space;150m² to 200m²
+daten_gwr.v_whg_;fl_ge200;Dwellings by floor space;200m² and more
+daten_gwr.v_whg_;fl_ohne;Dwellings by floor space;unknown
+daten_gwr.v_whg_;wraum_1;Dwellings by number of rooms;1 room
+daten_gwr.v_whg_;wraum_2;Dwellings by number of rooms;2 rooms
+daten_gwr.v_whg_;wraum_3;Dwellings by number of rooms;3 rooms
+daten_gwr.v_whg_;wraum_4;Dwellings by number of rooms;4 rooms
+daten_gwr.v_whg_;wraum_5;Dwellings by number of rooms;5 rooms
+daten_gwr.v_whg_;wraum_ge6;Dwellings by number of rooms;6 or more rooms
+daten_gwr.v_whg_;wraum_unbekannt;Dwellings by number of rooms;not known
+daten_gwr.v_geb_;whg1wfl_lt60;Residential buildings with 1 dwelling by floor space;less than 60m²
+daten_gwr.v_geb_;whg1wfl_60b89;Residential buildings with 1 dwelling by floor space;60m² to 90m²
+daten_gwr.v_geb_;whg1wfl_90b119;Residential buildings with 1 dwelling by floor space;90m² to 120m²
+daten_gwr.v_geb_;whg1wfl_120b149;Residential buildings with 1 dwelling by floor space;120m² to 150m²
+daten_gwr.v_geb_;whg1wfl_150b199;Residential buildings with 1 dwelling by floor space;150m² to 200m²
+daten_gwr.v_geb_;whg1wfl_ge200;Residential buildings with 1 dwelling by floor space;200m² and more
+daten_gwr.v_geb_;whg2wfl_lt120;Residential buildings with 2 dwellings by floor space;less than 120m²
+daten_gwr.v_geb_;whg2wfl_120b149;Residential buildings with 2 dwellings by floor space;120m² to 150m²
+daten_gwr.v_geb_;whg2wfl_150b199;Residential buildings with 2 dwellings by floor space;150m² to 200m²
+daten_gwr.v_geb_;whg2wfl_200b249;Residential buildings with 2 dwellings by floor space;200m² to 250m²
+daten_gwr.v_geb_;whg2wfl_250b299;Residential buildings with 2 dwellings by floor space;250m² to 300m²
+daten_gwr.v_geb_;whg2wfl_ge300;Residential buildings with 2 dwellings by floor space;300m² and more
+daten_gwr.v_geb_;whg3pwfl_lt200;Residential buildings with 3 or more dwellings by floor space;less than 200m²
+daten_gwr.v_geb_;whg3pwfl_200b299;Residential buildings with 3 or more dwellings by floor space;200m² to 300m²
+daten_gwr.v_geb_;whg3pwfl_300b499;Residential buildings with 3 or more dwellings by floor space;300m² to 500m²
+daten_gwr.v_geb_;whg3pwfl_500b799;Residential buildings with 3 or more dwellings by floor space;500m² to 800m²
+daten_gwr.v_geb_;whg3pwfl_800b1499;Residential buildings with 3 or more dwellings by floor space;800m² to 1500m²
+daten_gwr.v_geb_;whg3pwfl_ge1500;Residential buildings with 3 or more dwellings by floor space;1500m² and more
