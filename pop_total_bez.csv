@@ -1,0 +1,95 @@
+﻿id,name,total_pop
+101,Eisenstadt(Stadt),16118
+102,Rust(Stadt),1933
+103,Eisenstadt-Umgebung,44755
+104,Güssing,25852
+105,Jennersdorf,17157
+106,Mattersburg,41154
+107,Neusiedl am See,61845
+108,Oberpullendorf,37744
+109,Oberwart,55232
+201,Klagenfurt Stadt,105256
+202,Villach Stadt,65749
+203,Hermagor,17941
+204,Klagenfurt Land,62060
+205,Sankt Veit an der Glan,53950
+206,Spittal an der Drau,75545
+207,Villach Land,65656
+208,Völkermarkt,41981
+209,Wolfsberg,51846
+210,Feldkirchen,30111
+301,Krems an der Donau(Stadt),25473
+302,Sankt Pölten(Stadt),59767
+303,Waidhofen an der Ybbs(Stadt),11062
+304,Wiener Neustadt(Stadt),49156
+305,Amstetten,118403
+306,Baden,150216
+307,Bruck an der Leitha,110038
+308,Gänserndorf,109392
+309,Gmünd,35516
+310,Hollabrunn,52035
+311,Horn,30847
+312,Korneuburg,94113
+313,Krems(Land),56423
+314,Lilienfeld,25135
+315,Melk,79351
+316,Mistelbach,76986
+317,Mödling,121525
+318,Neunkirchen,87500
+319,Sankt Pölten(Land),134755
+320,Scheibbs,41976
+321,Tulln,109764
+322,Waidhofen an der Thaya,25350
+323,Wiener Neustadt(Land),81203
+325,Zwettl,41528
+401,Stadt Linz,213557
+402,Stadt Steyr,38036
+403,Stadt Wels,65482
+404,Braunau,110571
+405,Eferding,33884
+406,Freistadt,68326
+407,Gmunden,103155
+408,Grieskirchen,66750
+409,Kirchdorf,58199
+410,Linz-Land,157151
+411,Perg,70985
+412,Ried,63577
+413,Rohrbach,57364
+414,Schärding,58433
+415,Steyr-Land,62613
+416,Urfahr-Umgebung,88338
+417,Vöcklabruck,141988
+418,Wels-Land,77110
+501,Salzburg(Stadt),157659
+502,Hallein,62115
+503,Salzburg-Umgebung,159208
+504,St. Johann im Pongau,83310
+505,Tamsweg,20460
+506,Zell am See,90094
+601,Graz(Stadt),305314
+603,Deutschlandsberg,61065
+606,Graz-Umgebung,164654
+610,Leibnitz,87979
+611,Leoben,59071
+612,Liezen,79579
+614,Murau,26898
+616,Voitsberg,51172
+617,Weiz,92651
+620,Murtal,71516
+621,Bruck-Mürzzuschlag,97077
+622,Hartberg-Fürstenfeld,91082
+623,Südoststeiermark,83658
+701,Innsbruck-Stadt,132499
+702,Imst,62688
+703,Innsbruck-Land,186743
+704,Kitzbühel,66067
+705,Kufstein,114229
+706,Landeck,45030
+707,Lienz,49011
+708,Reutte,33946
+709,Schwaz,87447
+801,Bludenz,65948
+802,Bregenz,138030
+803,Dornbirn,94143
+804,Feldkirch,113663
+900,Wien(Stadt),2028289
