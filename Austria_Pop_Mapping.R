@@ -11,11 +11,11 @@ library(RColorBrewer)
 #GeoJSON Import 
 
 #Bezirke
-bez_url <- "https://raw.githubusercontent.com/lancerowen23/Lifties_Austria/main/austria_bezirke_simplified.geojson"  
-bezirke <- st_read(bez_url, quiet = FALSE)
+bez_path <- "Desktop/Lifties_Austria/austria_bezirke_simplified.geojson"  
+bezirke <- st_read(bez_path, quiet = FALSE)
 #Gemeinden
-gem_url <- "https://raw.githubusercontent.com/lancerowen23/Lifties_Austria/main/austria_gemeinden_simplified.geojson"  
-gemeinden <- st_read(gem_url, quiet = FALSE)
+gem_path <- "Desktop/Lifties_Austria/austria_gemeinden_simplified.geojson"  
+gemeinden <- st_read(gem_path, quiet = FALSE)
 
 #Pop Files Import
 
