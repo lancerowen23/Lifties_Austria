@@ -20,35 +20,14 @@ gemeinden <- st_read(gem_path, quiet = FALSE)
 #Pop Files Import
 
 #total population
-bez_pop_total <- read_csv('Desktop/Lifties_Austria/pop_total_bez.csv')
-gem_pop_total <- read.csv('Desktop/Lifties_Austria/pop_total_gem.csv', encoding = "UTF-8")
+bez_pop_total <- read_csv('Desktop/Lifties_Austria/Population_Data_Raw/pop_total_bez.csv')
+gem_pop_total <- read.csv('Desktop/Lifties_Austria/Population_Data_Raw/pop_total_gem.csv', encoding = "UTF-8")
 #population 60-74 years
-bez_pop_60to74 <- read_csv('Desktop/Lifties_Austria/pop_60to74_bez.csv')
-gem_pop_60to74 <- read.csv('Desktop/Lifties_Austria/pop_60to74_gem.csv', encoding = "UTF-8")
+bez_pop_60to74 <- read_csv('Desktop/Lifties_Austria/Population_Data_Raw/pop_60to74_bez.csv')
+gem_pop_60to74 <- read.csv('Desktop/Lifties_Austria/Population_Data_Raw/pop_60to74_gem.csv', encoding = "UTF-8")
 #population 75+ years
-bez_pop_75andUp <- read_csv('Desktop/Lifties_Austria/pop_75andUp_bez.csv')
-gem_pop_75andUp <- read.csv('Desktop/Lifties_Austria/pop_75andUp_gem.csv', encoding = "UTF-8")
-
-#housing
-#buildings with 1 floor above ground
-bez_one_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_buildings_with_one_floor_above_ground.csv')
-gem_one_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_buildings_with_one_floor_above_ground.csv')
-#buildings with 2 floors above ground
-bez_two_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_buildings_with_two_floors_above_ground.csv')
-gem_two_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_buildings_with_two_floors_above_ground.csv')
-#buildings with 3-5 floors above ground
-bez_3to5_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_buildings_3to5_floors_above_ground.csv')
-gem_3to5_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_buildings_3to5_floors_above_ground.csv')
-#owner-occupied dwellings
-bez_owner_occ <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_owner_occupied_dwellings.csv')
-gem_owner_occ <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_owner_occupied_dwellings.csv')
-#private household with one person
-bez_private_one <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_private_household_1person.csv')
-gem_private_one <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_private_household_1person.csv')
-#residential building with one dwelling
-bez_res_one_dwelling <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_res_build_with_one_dwelling.csv')
-gem_res_one_dwelling <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_res_build_with_one_dwelling.csv')
-
+bez_pop_75andUp <- read_csv('Desktop/Lifties_Austria/Population_Data_Raw/pop_75andUp_bez.csv')
+gem_pop_75andUp <- read.csv('Desktop/Lifties_Austria/Population_Data_Raw/pop_75andUp_gem.csv', encoding = "UTF-8")
 
 #join pop data
 #bezirke
@@ -63,6 +42,12 @@ bez_final_df <- bez_df %>%
          pop_75andUp = abs.y,
          percent_75andUp = percent.y)
 View(bez_final_df)
+#save as GeoJSON
+st_write(bez_final_df, "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalpop_data.geojson", driver = 'GeoJSON')
+#save with just pop data
+bez_final_df %>%
+  st_drop_geometry() %>%
+  write.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalpop_data.csv", row.names = FALSE)
 
 #gemeinden
 gem_df <- merge(gemeinden, gem_pop_total, by.x="g_id", by.y="id")
@@ -76,6 +61,34 @@ gem_final_df <- gem_df %>%
          pop_75andUp = abs.y,
          percent_75andUp = percent.y)
 View(gem_final_df)
+#save as GeoJSON
+st_write(gem_final_df, "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalpop_data.geojson", driver = 'GeoJSON')
+#save with just pop data
+gem_final_df %>%
+  st_drop_geometry() %>%
+  write.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalpop_data.csv", row.names = FALSE)
+
+
+#housing
+#buildings with 1 floor above ground
+bez_one_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/bez_buildings_with_one_floor_above_ground.csv')
+gem_one_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/gem_buildings_with_one_floor_above_ground.csv')
+#buildings with 2 floors above ground
+bez_two_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/bez_buildings_with_two_floors_above_ground.csv')
+gem_two_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/gem_buildings_with_two_floors_above_ground.csv')
+#buildings with 3-5 floors above ground
+bez_3to5_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/bez_buildings_3to5_floors_above_ground.csv')
+gem_3to5_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/gem_buildings_3to5_floors_above_ground.csv')
+#owner-occupied dwellings
+bez_owner_occ <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/bez_owner_occupied_dwellings.csv')
+gem_owner_occ <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/gem_owner_occupied_dwellings.csv')
+#private household with one person
+bez_private_one <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/bez_private_household_1person.csv')
+gem_private_one <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/gem_private_household_1person.csv')
+#residential building with one dwelling
+bez_res_one_dwelling <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/bez_res_build_with_one_dwelling.csv')
+gem_res_one_dwelling <- read.csv('Desktop/Lifties_Austria/Housing_Data_Raw/gem_res_build_with_one_dwelling.csv')
+
 
 #join housing data
 #bezirke
@@ -116,6 +129,13 @@ bez_final_df2 <- bez_df2 %>%
          percent_res_one_dwell = percent.y.2, 
          abs_res_one_dwell = abs.y.2)
 View(bez_final_df2)
+#save as GeoJSON
+st_write(bez_final_df2, "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalhousing_data.geojson", driver = 'GeoJSON')
+#save with just pop data
+bez_final_df2 %>%
+  st_drop_geometry() %>%
+  write.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalhousing_data.csv", row.names = FALSE)
+
 
 #gemeinden (housing)
 gem_df2 <- merge(gemeinden, gem_one_floor, by.x="g_id", by.y="id")
@@ -155,6 +175,14 @@ gem_final_df2 <- gem_df2 %>%
          percent_res_one_dwell = percent.y.2, 
          abs_res_one_dwell = abs.y.2)
 View(gem_final_df2)
+
+#save as GeoJSON
+st_write(gem_final_df2, "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhousing_data.geojson", driver = 'GeoJSON')
+#save with just pop data
+gem_final_df2 %>%
+  st_drop_geometry() %>%
+  write.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhousing_data.csv", row.names = FALSE)
+
 
 #mapping with Leaflet
 
