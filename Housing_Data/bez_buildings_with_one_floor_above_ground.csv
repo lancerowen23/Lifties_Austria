@@ -1,0 +1,95 @@
+﻿id,name,percent,abs
+101,Eisenstadt(Stadt),41.39,1763
+102,Rust(Stadt),71.69,856
+103,Eisenstadt-Umgebung,68.39,15411
+104,Güssing,75.54,9781
+105,Jennersdorf,72.75,5728
+106,Mattersburg,64.09,11228
+107,Neusiedl am See,62.92,17101
+108,Oberpullendorf,68.43,13180
+109,Oberwart,71,17518
+201,Klagenfurt Stadt,24.67,5336
+202,Villach Stadt,23.61,3111
+203,Hermagor,29.99,2335
+204,Klagenfurt Land,45.43,11098
+205,Sankt Veit an der Glan,39.71,7432
+206,Spittal an der Drau,25.82,7295
+207,Villach Land,35.2,9146
+208,Völkermarkt,47.39,8066
+209,Wolfsberg,40.04,7222
+210,Feldkirchen,39.31,4707
+301,Krems an der Donau(Stadt),33.71,2103
+302,Sankt Pölten(Stadt),43.58,5901
+303,Waidhofen an der Ybbs(Stadt),31.12,1027
+304,Wiener Neustadt(Stadt),29.34,3048
+305,Amstetten,31.24,11070
+306,Baden,51.33,24759
+307,Bruck an der Leitha,58.22,21944
+308,Gänserndorf,68.84,33127
+309,Gmünd,56.92,10134
+310,Hollabrunn,67.68,18116
+311,Horn,64.22,9556
+312,Korneuburg,57.26,21139
+313,Krems(Land),53.79,13602
+314,Lilienfeld,50.06,5089
+315,Melk,45.38,12710
+316,Mistelbach,69.45,27184
+317,Mödling,40.56,14721
+318,Neunkirchen,50.67,18048
+319,Sankt Pölten(Land),51.17,25633
+320,Scheibbs,36.15,5115
+321,Tulln,53.72,24243
+322,Waidhofen an der Thaya,67.23,8958
+323,Wiener Neustadt(Land),59.02,19589
+325,Zwettl,57.37,10652
+401,Stadt Linz,15.17,3637
+402,Stadt Steyr,9.29,668
+403,Stadt Wels,17.23,1942
+404,Braunau,25.32,9564
+405,Eferding,29.85,3301
+406,Freistadt,31.79,6993
+407,Gmunden,28.17,9596
+408,Grieskirchen,28.95,6451
+409,Kirchdorf,36.32,7134
+410,Linz-Land,32.91,12999
+411,Perg,32.36,6868
+412,Ried,26.49,5658
+413,Rohrbach,31.05,6271
+414,Schärding,30.31,6132
+415,Steyr-Land,35.76,7344
+416,Urfahr-Umgebung,34.59,9840
+417,Vöcklabruck,25.87,12026
+418,Wels-Land,34.55,8549
+501,Salzburg(Stadt),11.99,2631
+502,Hallein,15.74,2531
+503,Salzburg-Umgebung,20.47,9343
+504,St. Johann im Pongau,14.74,3320
+505,Tamsweg,30.26,2206
+506,Zell am See,17.21,4872
+601,Graz(Stadt),24.95,10742
+603,Deutschlandsberg,59.07,14596
+606,Graz-Umgebung,50.77,27690
+610,Leibnitz,57.5,18893
+611,Leoben,34.27,5719
+612,Liezen,35.67,11033
+614,Murau,39.45,4695
+616,Voitsberg,52.37,10252
+617,Weiz,49.05,15343
+620,Murtal,41.19,9349
+621,Bruck-Mürzzuschlag,39.72,12664
+622,Hartberg-Fürstenfeld,55.04,18573
+623,Südoststeiermark,61.67,20094
+701,Innsbruck-Stadt,11.99,1619
+702,Imst,21.48,4082
+703,Innsbruck-Land,18.8,8601
+704,Kitzbühel,16.79,4025
+705,Kufstein,18.08,5324
+706,Landeck,14.69,2030
+707,Lienz,15.44,2394
+708,Reutte,18.9,2195
+709,Schwaz,17.53,4294
+801,Bludenz,21.1,4468
+802,Bregenz,19.38,6867
+803,Dornbirn,21.43,4632
+804,Feldkirch,20.62,6279
+900,Wien(Stadt),30.52,54295

@@ -29,7 +29,28 @@ gem_pop_60to74 <- read.csv('Desktop/Lifties_Austria/pop_60to74_gem.csv', encodin
 bez_pop_75andUp <- read_csv('Desktop/Lifties_Austria/pop_75andUp_bez.csv')
 gem_pop_75andUp <- read.csv('Desktop/Lifties_Austria/pop_75andUp_gem.csv', encoding = "UTF-8")
 
-#join data
+#housing
+#buildings with 1 floor above ground
+bez_one_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_buildings_with_one_floor_above_ground.csv')
+gem_one_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_buildings_with_one_floor_above_ground.csv')
+#buildings with 2 floors above ground
+bez_two_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_buildings_with_two_floors_above_ground.csv')
+gem_two_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_buildings_with_two_floors_above_ground.csv')
+#buildings with 3-5 floors above ground
+bez_3to5_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_buildings_3to5_floors_above_ground.csv')
+gem_3to5_floor <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_buildings_3to5_floors_above_ground.csv')
+#owner-occupied dwellings
+bez_owner_occ <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_owner_occupied_dwellings.csv')
+gem_owner_occ <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_owner_occupied_dwellings.csv')
+#private household with one person
+bez_private_one <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_private_household_1person.csv')
+gem_private_one <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_private_household_1person.csv')
+#residential building with one dwelling
+bez_res_one_dwelling <- read.csv('Desktop/Lifties_Austria/Housing_Data/bez_res_build_with_one_dwelling.csv')
+gem_res_one_dwelling <- read.csv('Desktop/Lifties_Austria/Housing_Data/gem_res_build_with_one_dwelling.csv')
+
+
+#join pop data
 #bezirke
 bez_df <- merge(bezirke, bez_pop_total, by.x="g_id", by.y="id")
 bez_df <- merge(bez_df, bez_pop_60to74, by.x="g_id", by.y="id")
@@ -55,6 +76,85 @@ gem_final_df <- gem_df %>%
          pop_75andUp = abs.y,
          percent_75andUp = percent.y)
 View(gem_final_df)
+
+#join housing data
+#bezirke
+bez_df2 <- merge(bezirke, bez_one_floor, by.x="g_id", by.y="id")
+bez_df2 <- merge(bez_df2, bez_two_floor, by.x="g_id", by.y="id")
+bez_df2 <- merge(bez_df2, bez_3to5_floor, by.x="g_id", by.y="id")
+bez_df2 <- merge(bez_df2, bez_owner_occ, by.x="g_id", by.y="id")
+bez_df2 <- merge(bez_df2, bez_private_one, by.x="g_id", by.y="id")
+bez_df2 <- merge(bez_df2, bez_res_one_dwelling, by.x="g_id", by.y="id")
+
+bez_final_df2 <- bez_df2 %>% 
+  select(g_id, 
+         g_name, 
+         percent.x, 
+         abs.x, 
+         percent.y, 
+         abs.y, 
+         percent.x.1, 
+         abs.x.1,
+         percent.y.1, 
+         abs.y.1, 
+         percent.x.2,
+         abs.x.2,
+         percent.y.2, 
+         abs.y.2) %>% 
+  rename(id = g_id,
+         name = g_name,
+         percent_1floor = percent.x, 
+         abs_1floor = abs.x, 
+         percent_2floor = percent.y, 
+         abs_2floor = abs.y, 
+         percent_3to5floor = percent.x.1, 
+         abs_3to5floor = abs.x.1,
+         percent_own_occ = percent.y.1, 
+         abs_own_occ = abs.y.1, 
+         percent_priv_one = percent.x.2,
+         abs_priv_one = abs.x.2,
+         percent_res_one_dwell = percent.y.2, 
+         abs_res_one_dwell = abs.y.2)
+View(bez_final_df2)
+
+#gemeinden (housing)
+gem_df2 <- merge(gemeinden, gem_one_floor, by.x="g_id", by.y="id")
+gem_df2 <- merge(gem_df2, gem_two_floor, by.x="g_id", by.y="id")
+gem_df2 <- merge(gem_df2, gem_3to5_floor, by.x="g_id", by.y="id")
+gem_df2 <- merge(gem_df2, gem_owner_occ, by.x="g_id", by.y="id")
+gem_df2 <- merge(gem_df2, gem_private_one, by.x="g_id", by.y="id")
+gem_df2 <- merge(gem_df2, gem_res_one_dwelling, by.x="g_id", by.y="id")
+
+gem_final_df2 <- gem_df2 %>% 
+  select(g_id, 
+         g_name, 
+         percent.x, 
+         abs.x, 
+         percent.y, 
+         abs.y, 
+         percent.x.1, 
+         abs.x.1,
+         percent.y.1, 
+         abs.y.1, 
+         percent.x.2,
+         abs.x.2,
+         percent.y.2, 
+         abs.y.2) %>% 
+  rename(id = g_id,
+         name = g_name,
+         percent_1floor = percent.x, 
+         abs_1floor = abs.x, 
+         percent_2floor = percent.y, 
+         abs_2floor = abs.y, 
+         percent_3to5floor = percent.x.1, 
+         abs_3to5floor = abs.x.1,
+         percent_own_occ = percent.y.1, 
+         abs_own_occ = abs.y.1, 
+         percent_priv_one = percent.x.2,
+         abs_priv_one = abs.x.2,
+         percent_res_one_dwell = percent.y.2, 
+         abs_res_one_dwell = abs.y.2)
+View(gem_final_df2)
 
 #mapping with Leaflet
 
