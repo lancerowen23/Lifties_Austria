@@ -19,8 +19,7 @@ bez_housing <- st_read(bez_path, quiet = FALSE)
 gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhousing_data.geojson"   
 gem_housing <- st_read(gem_path, quiet = FALSE)
 
-# ---- CONFIGURATION ----
-# Choose dataset: either the aggregated (94 rows) or detailed (2115 rows)
+# Choose dataset
 #active_data <- bez_housing
 active_data <- gem_housing
 
