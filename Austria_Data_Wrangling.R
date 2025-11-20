@@ -55,13 +55,17 @@ bez_final_df %>%
 gem_df <- merge(gemeinden, gem_pop_total, by.x="g_id", by.y="id")
 gem_df <- merge(gem_df, gem_pop_60to74, by.x="g_id", by.y="id")
 gem_df <- merge(gem_df, gem_pop_75andUp, by.x="g_id", by.y="id")
+gem_df <- merge(gem_df, gem_no_child_households, by.x="g_id", by.y="id")
 gem_final_df <- gem_df %>% 
-  select(g_id, name, total_pop, abs.x, percent.x, abs.y, percent.y, geometry) %>% 
+  select(g_id, g_name, total_pop, abs.x, percent.x, abs.y, percent.y, abs, percent, geometry) %>% 
   rename(id = g_id,
+         name = g_name,
          pop_60to74 = abs.x,
          percent_60to74 = percent.x,
          pop_75andUp = abs.y,
-         percent_75andUp = percent.y)
+         percent_75andUp = percent.y,
+         households_no_kids = abs, 
+         percent_households_no_kids = percent)
 View(gem_final_df)
 #save as GeoJSON
 st_write(gem_final_df, "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalpop_data.geojson", driver = 'GeoJSON',
