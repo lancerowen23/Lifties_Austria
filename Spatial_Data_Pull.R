@@ -1,5 +1,7 @@
 #GEOSPATIAL GEOJSON DATA PULL FROM STATISTIK.AT
 
+#Author: Lance R. Owen 
+
 library(sf)
 library(rmapshaper)
 

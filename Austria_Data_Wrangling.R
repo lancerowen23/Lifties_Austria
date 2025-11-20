@@ -2,20 +2,13 @@
 #All data 2024
 #Spatial and Pop Data from Statistik Austria
 
+##Author: Lance R. Owen
+
 library(readr)
 library(sf)
 library(dplyr)
 library(leaflet)
 library(RColorBrewer)
-
-#GeoJSON Import 
-
-#Bezirke
-bez_path <- "Desktop/Lifties_Austria/austria_bezirke_simplified.geojson"  
-bezirke <- st_read(bez_path, quiet = FALSE)
-#Gemeinden
-gem_path <- "Desktop/Lifties_Austria/austria_gemeinden_simplified.geojson"  
-gemeinden <- st_read(gem_path, quiet = FALSE)
 
 #Pop Files Import
 
@@ -182,90 +175,3 @@ st_write(gem_final_df2, "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhou
 gem_final_df2 %>%
   st_drop_geometry() %>%
   write.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhousing_data.csv", row.names = FALSE)
-
-
-#mapping with Leaflet
-
-#bezirke 
-
-value_column <- "percent_75andUp"
-
-#Define color palette
-pal <- colorNumeric(
-  palette = "YlOrRd",
-  domain = bez_final_df[[value_column]],
-  na.color = "#cccccc")
-
-#Build the interactive leaflet map
-leaflet(bez_final_df) %>%
-  addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(
-    fillColor = ~pal(get(value_column)),
-    weight = 1,
-    opacity = 1,
-    color = "white",
-    dashArray = "1",
-    fillOpacity = 0.7,
-    
-    # highlight on hover
-    highlightOptions = highlightOptions(
-      weight = 2,
-      color = "#666",
-      fillOpacity = 0.9,
-      bringToFront = TRUE
-    ),
-    
-    # popup information
-    popup = ~paste0(
-      "<strong>", name, "</strong><br/>",
-      get(value_column), "% age 75 and older."
-    )) %>%
-  addLegend(
-    pal = pal,
-    values = bez_final_df[[value_column]],
-    opacity = 0.8,
-    title = "Pop. 75+",
-    position = "bottomright"
-  )
-
-#Gemeinden
-
-value_column <- "percent_75andUp"
-
-#Define color palette
-pal <- colorNumeric(
-  palette = "YlOrRd",
-  domain = gem_final_df[[value_column]],
-  na.color = "#cccccc")
-
-#Build the interactive leaflet map
-leaflet(gem_final_df) %>%
-  addProviderTiles("CartoDB.Positron") %>%
-  addPolygons(
-    fillColor = ~pal(get(value_column)),
-    weight = 1,
-    opacity = 1,
-    color = "white",
-    dashArray = "1",
-    fillOpacity = 0.7,
-    
-    # highlight on hover
-    highlightOptions = highlightOptions(
-      weight = 2,
-      color = "#666",
-      fillOpacity = 0.9,
-      bringToFront = TRUE
-    ),
-    
-    # popup information
-    popup = ~paste0(
-      "<strong>", name, "</strong><br/>",
-      get(value_column), "% age 75 and older."
-    )) %>%
-  addLegend(
-    pal = pal,
-    values = gem_final_df[[value_column]],
-    opacity = 0.8,
-    title = "Pop. 75+",
-    position = "bottomright"
-  )
