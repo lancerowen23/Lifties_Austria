@@ -1,4 +1,4 @@
-##Mapping Elderly Populations // Austria 
+##Data Import and Wrangling // Austria Population and Housing Data
 #All data 2024
 #Spatial and Pop Data from Statistik Austria
 
@@ -7,8 +7,6 @@
 library(readr)
 library(sf)
 library(dplyr)
-library(leaflet)
-library(RColorBrewer)
 
 #Pop Files Import
 
