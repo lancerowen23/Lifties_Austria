@@ -1,0 +1,122 @@
+﻿id,name,percent
+1010,Eisenstadt (Stadt),7.7
+1020,Eisenstadt-Umgebung / Rust,6.9
+1040,Güssing,9
+1050,Jennersdorf,9.4
+1060,Mattersburg,7.1
+1070,Neusiedl am See,6.8
+1080,Oberpullendorf,8.2
+1090,Oberwart,7.8
+2010,Klagenfurt (Stadt),7.4
+2020,Villach (Stadt),7.2
+2030,Hermagor,10.3
+2040,Klagenfurt Land,7.2
+2050,St. Veit an der Glan,8.2
+2060,Spittal an der Drau,8.9
+2070,Villach Land,8.1
+2080,Völkermarkt,7.6
+2090,Wolfsberg,8.5
+2100,Feldkirchen,8.1
+3010,Krems an der Donau (Stadt),8.3
+3020,St. Pölten (Stadt),6.6
+3030,Waidhofen an der Ybbs,9.3
+3040,Wiener Neustadt (Stadt),5.5
+3050,Amstetten,6.4
+3061,Baden-Ebreichsdorf,6.1
+3062,Pottenstein,6.4
+3070,Bruck an der Leitha,5.2
+3081,Gänserndorf-Großenzersdorf-Marchegg,5
+3082,Zistersdorf,7.3
+3090,Gmünd,8.5
+3100,Hollabrunn,6.9
+3110,Horn,9.3
+3120,Korneuburg,5.8
+3130,Krems (Land),7
+3140,Lilienfeld,7.6
+3150,Melk,7.3
+3161,Laa an der Thaya-Mistelbach-Poysdorf,8.2
+3162,Wolkersdorf,7.7
+3170,Mödling,6.7
+3180,Neunkirchen,7.1
+3191,Purkersdorf,7.3
+3192,St. Pölten (Land),6.2
+3200,Scheibbs,6.8
+3210,Tulln,7
+3220,Waidhofen an der Thaya,9
+3230,Wiener Neustadt (Land),5.8
+3250,Zwettl,8.5
+4010,Linz (Stadt),5.3
+4020,Steyr (Stadt),7
+4030,Wels (Stadt),5.6
+4040,Braunau am Inn,5.9
+4050,Eferding,6.1
+4060,Freistadt,7
+4070,Gmunden,7.2
+4080,Grieskirchen,6.9
+4090,Kirchdorf an der Krems,7
+4100,Linz-Land,5.7
+4110,Perg,6.4
+4120,Ried im Innkreis,6.5
+4130,Rohrbach,7.5
+4140,Schärding,6.7
+4150,Steyr-Land,7.3
+4161,Leonfelden,6.2
+4162,Urfahr-Umgebung,7.1
+4170,Vöcklabruck,6.2
+4180,Wels-Land,5.5
+5010,Salzburg (Stadt),5.7
+5020,Hallein,5.9
+5030,Salzburg-Umgebung,6.1
+5040,St. Johann im Pongau,6.3
+5050,Tamsweg,8
+5060,Zell am See,6.6
+6010,Graz(Stadt),4.8
+6030,Deutschlandsberg,8.1
+6060,Graz-Umgebung,6.9
+6100,Leibnitz,6.8
+6110,Leoben,7.4
+6120,Liezen,7.6
+6140,Murau,9.7
+6160,Voitsberg,8.1
+6170,Weiz,7.1
+6200,Murtal,8.6
+6210,Bruck-Mürzzuschlag,8
+6220,Hartberg-Fürstenfeld,7.9
+6230,Südoststeiermark,8.7
+7010,Innsbruck-Stadt,5.3
+7020,Imst,5.9
+7030,Innsbruck-Land,5.9
+7040,Kitzbühel,7.2
+7050,Kufstein,5.9
+7060,Landeck,6.5
+7070,Lienz,8.4
+7080,Reutte,6.8
+7090,Schwaz,5.9
+8010,Bludenz,6.3
+8021,Bezau,6
+8022,Bregenz,6.1
+8030,Dornbirn,5.4
+8040,Feldkirch,5.8
+9010,Wien 1.,
+9020,Wien 2.,
+9030,Wien 3.,
+9040,Wien 4.,
+9050,Wien 5.,
+9060,Wien 6.,
+9070,Wien 7.,
+9080,Wien 8.,
+9090,Wien 9.,
+9100,Wien 10.,
+9110,Wien 11.,
+9120,Wien 12.,
+9130,Wien 13.,
+9140,Wien 14.,
+9150,Wien 15.,
+9160,Wien 16.,
+9170,Wien 17.,
+9180,Wien 18.,
+9190,Wien 19.,
+9200,Wien 20.,
+9210,Wien 21.,
+9220,Wien 22.,
+9230,Wien 23.,
