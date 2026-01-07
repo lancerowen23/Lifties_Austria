@@ -1,16 +1,26 @@
 ### Geocoding Addresses for Customer Analysis
 
+## Author: Lance R. Owen 
+
+# Geocoding addresses using HERE Geocoding service and aggregating to both 
+# gemeinden and bezirke. 
+
 library(dplyr)
 library(stringr)
 library(hereR)
+library(sf)
+library(leaflet)
+library(ggplot2)
 
+#data import
+#2022
 cust_22 <- read.csv('~/Downloads/P22_2.csv')
+#2023
 cust_23 <- read.csv('~/Downloads/P23_2.csv')
+#2024
 cust_24 <- read.csv('~/Downloads/P24_2.csv')
 
-# Cleaning names for geocoding
-library(stringr)
-
+#Cleaning names for geocoding
 library(stringr)
 
 clean_street_at <- function(street) {
@@ -55,7 +65,7 @@ cust_24 <- cust_24 %>%
     street_clean = clean_street_at(street)
   )
 
-#create single string for geocoding
+#create single string for geocoding as required by HERE geocoding service
 cust_22 <- cust_22 %>%
   mutate(full_address = paste(street_clean, postal_code, city, "Austria"))
 cust_23 <- cust_23 %>%
@@ -71,3 +81,117 @@ set_key("API_Key")
 results_22 <- geocode(cust_22$full_address)
 results_23 <- geocode(cust_23$full_address)
 results_24 <- geocode(cust_24$full_address)
+
+# map results by year
+leaflet(data = results_22) %>%  # replace geo_sf with your sf object
+  addTiles() %>%             # base OpenStreetMap tiles
+  addCircleMarkers(
+    ~st_coordinates(geometry)[,1],  # longitude
+    ~st_coordinates(geometry)[,2],  # latitude
+    radius = 4,
+    color = "navy",
+    stroke = FALSE,
+    fillOpacity = 0.6,
+    popup = ~paste0("<strong>", street, " ", house_number, "</strong><br>",
+                    city, ", ", postal_code, "<br>",
+                    "Score: ", round(score,2))
+  )
+
+leaflet(data = results_23) %>%  # replace geo_sf with your sf object
+  addTiles() %>%             # base OpenStreetMap tiles
+  addCircleMarkers(
+    ~st_coordinates(geometry)[,1],  # longitude
+    ~st_coordinates(geometry)[,2],  # latitude
+    radius = 4,
+    color = "red",
+    stroke = FALSE,
+    fillOpacity = 0.6,
+    popup = ~paste0("<strong>", street, " ", house_number, "</strong><br>",
+                    city, ", ", postal_code, "<br>",
+                    "Score: ", round(score,2))
+  )
+
+leaflet(data = results_24) %>%  # replace geo_sf with your sf object
+  addTiles() %>%             # base OpenStreetMap tiles
+  addCircleMarkers(
+    ~st_coordinates(geometry)[,1],  # longitude
+    ~st_coordinates(geometry)[,2],  # latitude
+    radius = 4,
+    color = "darkgreen",
+    stroke = FALSE,
+    fillOpacity = 0.6,
+    popup = ~paste0("<strong>", street, " ", house_number, "</strong><br>",
+                    city, ", ", postal_code, "<br>",
+                    "Score: ", round(score,2))
+  )
+
+
+#Gemeinden aggregation 
+gem_path <- "Desktop/Lifties_Austria/austria_gemeinden_simplified.geojson"   
+austria_gemeinden <- st_read(gem_path)
+# Repair invalid geometries
+austria_gemeinden <- st_make_valid(austria_gemeinden)
+#check CRS
+st_crs(austria_gemeinden)
+st_crs(results_22)
+st_crs(results_23)
+st_crs(results_24)
+
+#harmonize CRS
+results_22 <- st_transform(results_22, st_crs(austria_gemeinden))
+results_23 <- st_transform(results_23, st_crs(austria_gemeinden))
+results_24 <- st_transform(results_24, st_crs(austria_gemeinden))
+
+#join, aggregate, and write to geojson
+points_with_gemeinde_22 <- st_join(results_22, austria_gemeinden, left = TRUE)
+agg_gemeinde_22 <- points_with_gemeinde_22 %>%
+  st_set_geometry(NULL) %>%       # drop geometry for aggregation
+  group_by(g_id) %>%              # municipality name field
+  summarise(address_count = n(), .groups = "drop") %>%
+  arrange(desc(address_count))
+gemeinde_counts_22 <- austria_gemeinden %>%
+  left_join(agg_gemeinde_22, by = "g_id") %>%
+  mutate(address_count = if_else(is.na(address_count), 0L, address_count))
+st_write(gemeinde_counts_22, "Desktop/Lifties_Austria/Final_Data_Cleaned/gemeinde_counts_22.geojson", driver = 'GeoJSON')
+
+points_with_gemeinde_23 <- st_join(results_23, austria_gemeinden, left = TRUE)
+agg_gemeinde_23 <- points_with_gemeinde_23 %>%
+  st_set_geometry(NULL) %>%       # drop geometry for aggregation
+  group_by(g_id) %>%              # municipality name field
+  summarise(address_count = n(), .groups = "drop") %>%
+  arrange(desc(address_count))
+gemeinde_counts_23 <- austria_gemeinden %>%
+  left_join(agg_gemeinde_23, by = "g_id") %>%
+  mutate(address_count = if_else(is.na(address_count), 0L, address_count))
+st_write(gemeinde_counts_23, "Desktop/Lifties_Austria/Final_Data_Cleaned/gemeinde_counts_23.geojson", driver = 'GeoJSON')
+
+points_with_gemeinde_24 <- st_join(results_24, austria_gemeinden, left = TRUE)
+agg_gemeinde_24 <- points_with_gemeinde_24 %>%
+  st_set_geometry(NULL) %>%       # drop geometry for aggregation
+  group_by(g_id) %>%              # municipality name field
+  summarise(address_count = n(), .groups = "drop") %>%
+  arrange(desc(address_count))
+gemeinde_counts_24 <- austria_gemeinden %>%
+  left_join(agg_gemeinde_24, by = "g_id") %>%
+  mutate(address_count = if_else(is.na(address_count), 0L, address_count))
+st_write(gemeinde_counts_24, "Desktop/Lifties_Austria/Final_Data_Cleaned/gemeinde_counts_24.geojson", driver = 'GeoJSON')
+
+
+#Combine all three years
+agg_gem_cust_22_23_24 <- agg_gemeinde_22 %>%
+  left_join(agg_gemeinde_23, by = "g_id") %>%
+  left_join(agg_gemeinde_24, by = "g_id")
+agg_gem_cust_22_23_24 <- agg_gem_cust_22_23_24 %>%
+  mutate(total_sum = rowSums(across(c(address_count.x, address_count.y, address_count)), na.rm = TRUE)) %>% 
+  select(g_id, total_sum)
+
+# write final gemeinden file
+gemeinde_counts_total <- austria_gemeinden %>%
+  left_join(agg_gem_cust_22_23_24, by = "g_id")
+st_write(gemeinde_counts_total, "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/gemeinde_counts_total.geojson", driver = 'GeoJSON')
+
+# aggregate up to bezirke level and write to file
+gem_totals_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/gemeinde_counts_total.geojson"   
+gem_totals <- st_read(gem_totals_path)
+gem_totals <- gem_totals %>%
+  mutate(total_sum = if_else(is.na(total_sum), 0L, total_sum))
