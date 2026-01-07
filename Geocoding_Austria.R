@@ -61,22 +61,22 @@ cust_24 <- cust_24 %>%
 set_key(Sys.getenv("HERE_API_KEY"))
 
 results_22 <- geocode(
-  address = cust_22$Aufstellort.Adresse,
-  city = cust_22$Aufstellort.Ort,
-  postalCode = cust_22$Aufstellort.PLZ,
+  address = cust_22$street_clean,
+  city = cust_22$city,
+  postalCode = cust_22$postal_code,
   country = "AUT"
 )
 
 results_23 <- geocode(
-  address = cust_23$Aufstellort.Adresse,
-  city = cust_23$Aufstellort.Ort,
-  postalCode = cust_23$Aufstellort.PLZ,
+  address = cust_23$street_clean,
+  city = cust_23$city,
+  postalCode = cust_23$postal_code,
   country = "AUT"
 )
 
 results_24 <- geocode(
-  address = cust_24$Aufstellort.Adresse,
+  address = cust_24$street_clean,
   city = cust_24$Aufstellort.Ort,
-  postalCode = cust_24$Aufstellort.PLZ,
+  postalCode = cust_24$postal_code,
   country = "AUT"
 )
