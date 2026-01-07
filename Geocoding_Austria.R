@@ -55,28 +55,19 @@ cust_24 <- cust_24 %>%
     street_clean = clean_street_at(street)
   )
 
+#create single string for geocoding
+cust_22 <- cust_22 %>%
+  mutate(full_address = paste(street_clean, postal_code, city, "Austria"))
+cust_23 <- cust_23 %>%
+  mutate(full_address = paste(street_clean, postal_code, city, "Austria"))
+cust_24 <- cust_24 %>%
+  mutate(full_address = paste(street_clean, postal_code, city, "Austria"))
+
 
 # geocode using HERE
 
-set_key(Sys.getenv("HERE_API_KEY"))
+set_key("API_Key")
 
-results_22 <- geocode(
-  address = cust_22$street_clean,
-  city = cust_22$city,
-  postalCode = cust_22$postal_code,
-  country = "AUT"
-)
-
-results_23 <- geocode(
-  address = cust_23$street_clean,
-  city = cust_23$city,
-  postalCode = cust_23$postal_code,
-  country = "AUT"
-)
-
-results_24 <- geocode(
-  address = cust_24$street_clean,
-  city = cust_24$Aufstellort.Ort,
-  postalCode = cust_24$postal_code,
-  country = "AUT"
-)
+results_22 <- geocode(cust_22$full_address)
+results_23 <- geocode(cust_23$full_address)
+results_24 <- geocode(cust_24$full_address)
