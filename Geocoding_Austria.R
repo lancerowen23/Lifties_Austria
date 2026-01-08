@@ -102,7 +102,6 @@ leaflet(data = final_results) %>%  # replace geo_sf with your sf object
                     city, ", ", postal_code, "<br>",
                     "Score: ", round(score,2)))
 
-
 #Gemeinden aggregation 
 gem_path <- "Desktop/Lifties_Austria/austria_gemeinden_simplified.geojson"   
 austria_gemeinden <- st_read(gem_path)
@@ -126,7 +125,16 @@ gemeinden_customer_counts <- austria_gemeinden %>%
   mutate(address_count = if_else(is.na(address_count), 0L, address_count))
 st_write(gemeinden_customer_counts, "Desktop/Lifties_Austria/Final_Data_Cleaned/gemeinden_customer_counts.geojson", driver = 'GeoJSON')
 
-#Bezirke aggregation 
+#join to housing and population data and write as csv and geojson
+gem_pop_housing <- read.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/gem_final_combined_data.csv")
+gem_final_data <- merge(gem_pop_housing, agg_gemeinden, by.x = "id", by.y = "g_id")
+readr::write_csv(gem_final_data,
+          file = "Desktop/Lifties_Austria/Final_Data_Cleaned/Combined/gem_final_combined_data.csv")
+gem_final_geojson <- merge(gemeinden_customer_counts, gem_pop_housing, by.x = "g_id", by.y = "id") %>% 
+  select(-name.x)
+st_write(gem_final_geojson, "Desktop/Lifties_Austria/Final_Data_Cleaned/Combined/gemeinden_final.geojson", driver = 'GeoJSON')
+
+#Bezirke aggregation data and
 bez_path <- "Desktop/Lifties_Austria/austria_bezirke_simplified.geojson"   
 austria_bezirke <- st_read(bez_path)
 # Repair invalid geometries
@@ -137,6 +145,7 @@ st_crs(final_results)
 final_results <- st_transform(final_results, st_crs(austria_bezirke))
 
 #IMPORTANT: DROP ALL ROWS WITH VIENNA DISTRICTS BECAUSE THE ENTIRE CITY IS ITS OWN PB
+#IN THE GEOJSON FROM STATISTIK AUSTIRA
 austria_bezirke <- austria_bezirke[1:94, ]
 
 points_with_bezirke <- st_join(final_results, austria_bezirke, left = TRUE)
@@ -152,7 +161,14 @@ bezirke_customer_counts <- austria_bezirke %>%
   mutate(address_count = if_else(is.na(address_count), 0L, address_count))
 st_write(bezirke_customer_counts, "Desktop/Lifties_Austria/Final_Data_Cleaned/bezirke_customer_counts.geojson", driver = 'GeoJSON')
 
+#join to housing and population data and write as csv and geojson
+bez_pop_housing <- read.csv("Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/bez_final_combined_data.csv")
+bez_final_data <- merge(bez_pop_housing, agg_bezirke, by.x = "id", by.y = "g_id")
+readr::write_csv(bez_final_data,
+                 file = "Desktop/Lifties_Austria/Final_Data_Cleaned/Combined/bez_final_combined_data.csv")
 
+bez_final_geojson <- merge(bezirke_customer_counts, bez_pop_housing, by.x = "g_id", by.y = "id")
+st_write(bez_final_geojson, "Desktop/Lifties_Austria/Final_Data_Cleaned/Combined/bezirke_final.geojson", driver = 'GeoJSON')
 
 
 
@@ -198,21 +214,6 @@ leaflet(data = results_24) %>%  # replace geo_sf with your sf object
                     city, ", ", postal_code, "<br>",
                     "Score: ", round(score,2))
   )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 st_crs(results_22)

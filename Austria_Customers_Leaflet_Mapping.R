@@ -12,28 +12,31 @@ library(RColorBrewer)
 #GeoJSON Import 
 
 #Bezirke
-bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalhousing_data.geojson"  
-bez_housing <- st_read(bez_path, quiet = FALSE)
+bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/bezirke_customer_counts.geojson"  
+bez_customers <- st_read(bez_path, quiet = FALSE)
+
+bez_customers <- bez_customers %>%
+  mutate(address_count = if_else(is.na(address_count), 0L, address_count))
 
 #Gemeinden
-gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/gemeinde_counts_total.geojson"   
+gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/gemeinden_customer_counts.geojson"   
 gem_customers <- st_read(gem_path, quiet = FALSE)
 
 gem_customers <- gem_customers %>%
-  mutate(total_sum = if_else(is.na(total_sum), 0L, total_sum))
+  mutate(address_count = if_else(is.na(address_count), 0L, address_count))
 
 pal <- colorBin(
   palette = "YlOrRd",
-  domain  = gem_customers$total_sum,
+  domain  = bez_customers$total_sum,
   bins    = 10,
   pretty  = TRUE
 )
 
 
-leaflet(gem_customers) %>%
+leaflet(bez_customers) %>%
   addTiles() %>%
   addPolygons(
-    fillColor   = ~pal(total_sum),
+    fillColor   = ~pal(address_count),
     fillOpacity = 0.75,
     color       = "#444444",
     weight      = 0.5,
@@ -46,12 +49,40 @@ leaflet(gem_customers) %>%
     ),
     label = ~paste0(
       "<strong>", g_name, "</strong><br/>",
-      "Addresses: ", total_sum
+      "Addresses: ", address_count
     ) %>% lapply(htmltools::HTML)
   ) %>%
   addLegend(
     pal     = pal,
-    values = ~total_sum,
+    values = ~address_count,
+    opacity = 0.7,
+    title   = "Address Count",
+    position = "bottomright"
+  )
+
+
+leaflet(gem_customers) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor   = ~pal(address_count),
+    fillOpacity = 0.75,
+    color       = "#444444",
+    weight      = 0.5,
+    smoothFactor = 0.2,
+    highlightOptions = highlightOptions(
+      weight = 2,
+      color = "#000000",
+      fillOpacity = 0.9,
+      bringToFront = TRUE
+    ),
+    label = ~paste0(
+      "<strong>", g_name, "</strong><br/>",
+      "Addresses: ", address_count
+    ) %>% lapply(htmltools::HTML)
+  ) %>%
+  addLegend(
+    pal     = pal,
+    values = ~address_count,
     opacity = 0.7,
     title   = "Address Count",
     position = "bottomright"
