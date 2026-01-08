@@ -12,31 +12,33 @@ library(RColorBrewer)
 #GeoJSON Import 
 
 #Bezirke
-bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/bezirke_customer_counts.geojson"  
+bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Combined/bezirke_final.geojson"  
 bez_customers <- st_read(bez_path, quiet = FALSE)
-
 bez_customers <- bez_customers %>%
   mutate(address_count = if_else(is.na(address_count), 0L, address_count))
 
 #Gemeinden
-gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Customers/gemeinden_customer_counts.geojson"   
+gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Combined/gemeinden_final.geojson"   
 gem_customers <- st_read(gem_path, quiet = FALSE)
-
 gem_customers <- gem_customers %>%
   mutate(address_count = if_else(is.na(address_count), 0L, address_count))
 
-pal <- colorBin(
+
+#MAPPING
+
+#BEZIRKE
+#SET COLOR PALATTE  
+bez_pal <- colorBin(
   palette = "YlOrRd",
-  domain  = bez_customers$total_sum,
-  bins    = 10,
+  domain  = bez_customers$address_count,
+  bins    = 15,
   pretty  = TRUE
 )
-
 
 leaflet(bez_customers) %>%
   addTiles() %>%
   addPolygons(
-    fillColor   = ~pal(address_count),
+    fillColor   = ~bez_pal(address_count),
     fillOpacity = 0.75,
     color       = "#444444",
     weight      = 0.5,
@@ -60,11 +62,19 @@ leaflet(bez_customers) %>%
     position = "bottomright"
   )
 
+#GEMEINDEN
+#SET COLOR PALATTE 
+gem_pal <- colorBin(
+  palette = "YlOrRd",
+  domain  = gem_customers$address_count,
+  bins    = 20,
+  pretty  = TRUE
+)
 
 leaflet(gem_customers) %>%
   addTiles() %>%
   addPolygons(
-    fillColor   = ~pal(address_count),
+    fillColor   = ~gem_pal(address_count),
     fillOpacity = 0.75,
     color       = "#444444",
     weight      = 0.5,
