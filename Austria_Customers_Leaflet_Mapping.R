@@ -91,7 +91,7 @@ leaflet(gem_customers) %>%
     ) %>% lapply(htmltools::HTML)
   ) %>%
   addLegend(
-    pal     = pal,
+    pal     = gem_pal,
     values = ~address_count,
     opacity = 0.7,
     title   = "Address Count",
