@@ -1,4 +1,7 @@
-#GEOSPATIAL GEOJSON DATA PULL FROM STATISTIK.AT
+# Script 1: GEOSPATIAL GEOJSON DATA PULL FROM STATISTIK.AT
+# This step pulls the geospatial data (including boundaries) from Statistik Austria
+# so that we can join them to demographic and housing data, as well as the counts of 
+# Lift installations. I pulled both gemeinden and bezirke in case we need both.
 
 #Author: Lance R. Owen 
 

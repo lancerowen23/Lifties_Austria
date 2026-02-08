@@ -1,4 +1,6 @@
-#Mapping Housing with Leaflet
+# Mapping Housing with Leaflet
+# Maps of demographic and housing characteristics
+# Data from Statistik Austria
 
 #Author: Lance R. Owen
 
@@ -12,9 +14,6 @@ library(RColorBrewer)
 #GeoJSON Import 
 
 #Housing
-#Bezirke
-bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Housing/bez_finalhousing_data.geojson"  
-bez_housing <- st_read(bez_path, quiet = FALSE)
 #Gemeinden
 gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Housing/gem_finalhousing_data.geojson"   
 gem_housing <- st_read(gem_path, quiet = FALSE)
