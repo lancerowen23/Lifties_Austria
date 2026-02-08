@@ -13,10 +13,10 @@ library(RColorBrewer)
 
 #Housing
 #Bezirke
-bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalhousing_data.geojson"  
+bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Housing/bez_finalhousing_data.geojson"  
 bez_housing <- st_read(bez_path, quiet = FALSE)
 #Gemeinden
-gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhousing_data.geojson"   
+gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Housing/gem_finalhousing_data.geojson"   
 gem_housing <- st_read(gem_path, quiet = FALSE)
 
 # Choose dataset

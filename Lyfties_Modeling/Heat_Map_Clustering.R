@@ -183,3 +183,50 @@ leaflet(gem_sp, options = leafletOptions(preferCanvas = TRUE)) %>%
     title = "Local Moran’s I clusters"
   )
 
+#Is the number of 75+ residents significantly associated with address counts, controlling for total population?
+  
+library(dplyr)
+library(MASS)
+
+gem <- gem_complete %>%
+  mutate(
+    address_count = as.numeric(address_count),
+    population    = as.numeric(total_pop),
+    pop75         = as.numeric(pop_75andUp)
+  ) %>%
+  filter(population > 0, !is.na(pop75))
+
+# Baseline model (population only)
+m0 <- glm(
+  address_count ~ offset(log(population)),
+  family = poisson(),
+  data = gem
+)
+
+# Check dispersion
+disp <- sum(residuals(m0, type = "pearson")^2) / df.residual(m0)
+
+family_use <- if (disp > 1.5) "negbin" else "poisson"
+
+# Model with 75+ population
+m1 <- if (family_use == "negbin") {
+  glm.nb(address_count ~ pop75 + offset(log(population)), data = gem)
+} else {
+  glm(address_count ~ pop75 + offset(log(population)),
+      family = poisson(), data = gem)
+}
+
+summary(m1)
+
+
+#Is the spatial clustering we observed actually driven by the 75+ population?
+
+library(spdep)
+
+gem$resid_m1 <- residuals(m1, type = "pearson")
+
+nb <- poly2nb(gem, queen = TRUE)
+lw <- nb2listw(nb, style = "W", zero.policy = TRUE)
+
+moran.test(gem$resid_m1, lw, zero.policy = TRUE)
+
