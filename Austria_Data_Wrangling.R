@@ -1,6 +1,10 @@
-##Data Import and Wrangling // Austria Population and Housing Data
-#All data 2024
-#Spatial and Pop Data from Statistik Austria
+##Script 2: Austria Demographic and Housing Data Import and Wrangling 
+## This script wrangles data downloaded from Statistik Austria and stored in the raw
+## data folders in the GitHub repo. It also joins it to the geospatial boundaries imported
+## via Script 1 and publishes it as a geojson. The resulting geojson is stored in GitHub repo
+## and is pulled by other scripts from there. 
+
+#All data 2024 from Statistik Austria
 
 ##Author: Lance R. Owen
 
