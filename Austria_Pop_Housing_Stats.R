@@ -9,32 +9,32 @@ library(leaflet)
 
 #Population
 #Bezirke
-bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalpop_data.geojson"  
+bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Population/bez_finalpop_data.geojson"  
 bez_pop <- st_read(bez_path, quiet = FALSE)
 #Gemeinden
-gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalpop_data.geojson"   
+gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Population/gem_finalpop_data.geojson"   
 gem_pop <- st_read(gem_path, quiet = FALSE)
 
 #Housing
 #Bezirke
-bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_finalhousing_data.geojson"  
+bez_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Housing/bez_finalhousing_data.geojson"  
 bez_housing <- st_read(bez_path, quiet = FALSE)
 #Gemeinden
-gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_finalhousing_data.geojson"   
+gem_path <- "Desktop/Lifties_Austria/Final_Data_Cleaned/Housing/gem_finalhousing_data.geojson"   
 gem_housing <- st_read(gem_path, quiet = FALSE)
 
 #combine and drop geometry for analysis
 bez_pop2 <- bez_pop %>% st_drop_geometry()
 bez_housing2 <- bez_housing %>% st_drop_geometry()
 bez_combined <- merge(bez_pop2, bez_housing2, by.x = "id", by.y = "id") %>% 
-  select(-name.y)
+  dplyr::select(-name.y)
 #write.csv(bez_combined, "Desktop/Lifties_Austria/Final_Data_Cleaned/bez_final_combined_data.csv", row.names = FALSE)
 
 
 gem_pop2 <- gem_pop %>% st_drop_geometry()
 gem_housing2 <- gem_housing %>% st_drop_geometry()
 gem_combined <- merge(gem_pop2, gem_housing2, by.x = "id", by.y = "id") %>% 
-  select(-name.y)
+  dplyr::select(-name.y)
 #write.csv(gem_combined, "Desktop/Lifties_Austria/Final_Data_Cleaned/gem_final_combined_data.csv", row.names = FALSE)
 
 
@@ -65,7 +65,7 @@ abline(lm(households_no_kids ~ pop_60to74, data = gem_pop), col = "red")
 
 #Look at housing data and age correlations
 #bezirke
-bez_combined_pct <- bez_combined %>% select(total_pop, percent_60to74, percent_75andUp, 
+bez_combined_pct <- bez_combined %>% dplyr::select(total_pop, percent_60to74, percent_75andUp, 
                                             percent_households_no_kids,
                                             percent_1floor, percent_2floor, percent_3to5floor, 
                                             percent_own_occ, percent_priv_one, percent_res_one_dwell)
@@ -85,7 +85,7 @@ corrplot(
 )
 
 #gemeinden
-gem_combined_pct <- gem_combined %>% select(total_pop, percent_60to74, percent_75andUp, 
+gem_combined_pct <- gem_combined %>% dplyr::select(total_pop, percent_60to74, percent_75andUp, 
                                             percent_households_no_kids,
                                             percent_1floor, percent_2floor, percent_3to5floor, 
                                             percent_own_occ, percent_priv_one, percent_res_one_dwell)

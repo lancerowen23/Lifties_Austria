@@ -4,7 +4,7 @@
 ## via Script 1 and publishes it as a geojson. The resulting geojson is stored in GitHub repo
 ## and is pulled by other scripts from there. 
 
-#All data 2024 from Statistik Austria
+#All data 2024 from Statistik Austria, downloaded from the STATatlas (https://www.statistik.at/atlas/?languageid=1)
 
 ##Author: Lance R. Owen
 
