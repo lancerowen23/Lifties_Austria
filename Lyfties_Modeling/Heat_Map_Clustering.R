@@ -240,3 +240,127 @@ lw <- nb2listw(nb, style = "W", zero.policy = TRUE)
 
 moran.test(gem$resid_m1, lw, zero.policy = TRUE)
 
+# basic total_population map
+
+gem_complete$log_total_pop <- log1p(gem_complete$total_pop)
+
+
+p_pop <- ggplot(gem_complete) +
+  geom_sf(aes(fill = log_total_pop), color = "lightgrey", linewidth = 0.01) +
+  scale_fill_gradient(
+    low = "#F2E5FF",
+    high = "#5B2A86",
+    name = "Log(Total Population)",
+    labels = comma
+  ) +
+  labs(
+    title = "Total Population by Municipality",
+    subtitle = "Log-scaled to reflect large differences in population size",
+    caption = "Source: Statistik Austria"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    legend.position = "right"
+  )
+
+p_pop
+
+
+# residuals maps
+
+# ---- Fit a simple population-only baseline model ----
+# log1p handles skew and zeros safely
+gem <- gem_complete %>% mutate(log_total_pop = log1p(total_pop))
+
+m_pop <- lm(address_count ~ log_total_pop, data = gem)
+
+# ---- Add predictions + residuals (Observed - Predicted) ----
+gem_res <- gem %>%
+  mutate(
+    pred_pop = predict(m_pop, newdata = gem),
+    resid_pop = address_count - pred_pop
+  )
+
+# ---- (Optional) Winsorize residuals for nicer mapping (reduces outlier domination) ----
+lims <- quantile(gem_res$resid_pop, probs = c(0.02, 0.98), na.rm = TRUE)
+gem_res <- gem_res %>%
+  mutate(resid_pop_w = pmin(pmax(resid_pop, lims[1]), lims[2]))
+
+# ---- Residual map ----
+p_resid <- ggplot(gem_res) +
+  geom_sf(aes(fill = resid_pop_w), color = "white", linewidth = 0.01) +
+  scale_fill_gradient2(
+    low = "#2B8CBE",
+    mid = "white",
+    high = "#E34A33",
+    midpoint = 0,
+    name = "Residual\n(Observed - Predicted)",
+    labels = comma
+  ) +
+  labs(
+    title = "Residuals After Accounting for Population",
+    subtitle = "Baseline model: address_count ~ log(1 + total_pop)",
+    caption = "Positive = higher than expected for population size; Negative = lower than expected"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    legend.position = "right"
+  )
+
+p_resid
+
+# Structural uplift difference mapping
+
+# import Catboost predictions
+catboost_pred <- read.csv("Desktop/Lifties_Austria/Lyfties_Modeling/model_predictions_residuals.csv")
+catboost_pred <- catboost_pred %>% dplyr::select(g_id, pred_catboost)
+
+# join to geojson
+gem <- merge(gem_complete, catboost_pred, by.x = 'g_id', by.y = 'g_id')
+
+# ---- Population-only baseline model ----
+m_pop <- lm(address_count ~ log_total_pop, data = gem)
+
+gem <- gem %>%
+  mutate(
+    pred_pop = predict(m_pop, newdata = gem),
+    uplift   = catboost_pred - pred_pop   # "structural uplift" beyond population
+  )
+
+# ---- Optional: winsorize to keep outliers from dominating the color scale ----
+lims <- quantile(gem$uplift, probs = c(0.02, 0.98), na.rm = TRUE)
+gem <- gem %>%
+  mutate(uplift_w = pmin(pmax(uplift, lims[1]), lims[2]))
+
+# ---- Map: CatBoost vs population-only baseline ----
+p_uplift <- ggplot(gem) +
+  geom_sf(aes(fill = uplift_w$pred_catboost), color = "grey", linewidth = 0.05) +
+  scale_fill_gradient2(
+    low = "#2B8CBE",
+    mid = "white",
+    high = "#E34A33",
+    midpoint = 0,
+    name = "CatBoost − Pop Baseline",
+    labels = comma
+  ) +
+  labs(
+    title = "Structural Uplift Beyond Population Scale",
+    subtitle = "Positive values = higher predicted outcomes than population alone would suggest",
+    caption = "Uplift = CatBoost prediction minus population-only baseline prediction"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid = element_blank(),
+    axis.text  = element_blank(),
+    axis.ticks = element_blank(),
+    legend.position = "right"
+  )
+
+p_uplift
+
