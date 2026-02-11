@@ -218,6 +218,16 @@ m1 <- if (family_use == "negbin") {
 
 summary(m1)
 
+# Model with income
+m2 <- if (family_use == "negbin") {
+  glm.nb(address_count ~ income + offset(log(population)), data = gem)
+} else {
+  glm(address_count ~ income + offset(log(population)),
+      family = poisson(), data = gem)
+}
+
+summary(m2)
+
 
 #Is the spatial clustering we observed actually driven by the 75+ population?
 

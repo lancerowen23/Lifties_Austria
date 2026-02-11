@@ -218,3 +218,69 @@ p_resid
 
 # Housing small multiples
 p_housing
+
+
+### Bivariate total population vs. pensioner income
+# ---- Bivariate classification ----
+n_class <- 3
+style   <- "quantile"
+
+gem_bi1 <- gem_complete %>%
+  bi_class(x = total_pop, y = income, style = style, dim = n_class)
+
+# ---- Map ----
+p_bi1 <- ggplot(gem_bi1) +
+  geom_sf(aes(fill = bi_class), color = NA) +
+  bi_scale_fill(pal = "DkBlue", dim = n_class) +
+  bi_theme() +
+  guides(fill = "none") + 
+  labs(
+    #title = "Bivariate Map: Total Population × Income",
+    #subtitle = paste0("Classes: ", style, " (", n_class, "×", n_class, ")")
+  )
+
+# ---- Legend ----
+leg_bi1 <- bi_legend(
+  pal  = "DkBlue",
+  dim  = n_class,
+  xlab = "Higher total_pop →",
+  ylab = "Higher income →",
+  size = 9
+)
+
+# ---- Patchwork layout (your format) ----
+(p_bi1 | wrap_elements(full = leg_bi1)) +
+  plot_layout(widths = c(4, 1))
+
+
+### Bivariate total population vs. 2_floor_buildings
+# ---- Bivariate classification ----
+n_class <- 3
+style   <- "quantile"
+
+gem_bi2 <- gem_complete %>%
+  bi_class(x = total_pop, y = abs_2floor, style = style, dim = n_class)
+
+# ---- Map ----
+p_bi2 <- ggplot(gem_bi2) +
+  geom_sf(aes(fill = bi_class), color = NA) +
+  bi_scale_fill(pal = "GrPink", dim = n_class) +
+  bi_theme() +
+  guides(fill = "none") + 
+  labs(
+    #title = "Bivariate Map: Total Population × % Two-Story Buildings",
+    #subtitle = paste0("Classes: ", style, " (", n_class, "×", n_class, ")")
+  )
+
+# ---- Legend ----
+leg_bi2 <- bi_legend(
+  pal  = "GrPink",
+  dim  = n_class,
+  xlab = "Higher total_pop →",
+  ylab = "Higher % two-story blgs. →",
+  size = 9
+)
+
+# ---- Patchwork layout (your format) ----
+(p_bi2 | wrap_elements(full = leg_bi2)) +
+  plot_layout(widths = c(4, 1))

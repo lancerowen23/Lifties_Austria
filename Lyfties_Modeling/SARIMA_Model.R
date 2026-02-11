@@ -85,4 +85,55 @@ AIC(sarima_model, sarima_forced)
 #check residuals
 checkresiduals(sarima_forced)
 
+#Visuals
+
+fc <- forecast(sarima_model, h = 12)
+
+p_main <- autoplot(fc) +
+  labs(
+    title = "Monthly Installations: Observed, Fitted, and 12-Month Forecast",
+    subtitle = "Model: ARIMA(2,1,1) with drift",
+    x = NULL,
+    y = "Installations"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+# Optional: add actual points over the line (often looks sharper in slides)
+p_main <- p_main +
+  autolayer(sales_ts, series = "Observed", size = 0.6)
+  
+
+# ---- Residual ACF (secondary visual)
+resid_vec <- residuals(sarima_model)
+
+p_acf <- ggAcf(resid_vec, lag.max = 18) +
+  labs(
+    title = "Residual ACF",
+    subtitle = "No strong remaining autocorrelation",
+    x = "Lag (months)",
+    y = "ACF"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+# ---- Combine: big main + small ACF inset-like panel
+# Layout: main takes ~3/4 width, ACF takes ~1/4 width
+p_combo <- p_main + p_acf + plot_layout(widths = c(3.2, 1))
+
+p_combo
+
+
+library(cowplot)
+
+p_combo_inset <- ggdraw(p_main) +
+  draw_plot(p_acf, x = 0.63, y = 0.08, width = 0.35, height = 0.38)
+
+p_combo_inset
 
