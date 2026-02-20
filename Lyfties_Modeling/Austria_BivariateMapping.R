@@ -15,6 +15,7 @@ library(ggthemes)
 library(biscale)
 library(tidyr)
 library(patchwork)
+library(stringr)
 library(scales)
 
 # =========================
@@ -40,6 +41,29 @@ dat_core <- dat %>%
     !is.na(total_pop)
   )
 
+# Import points of install
+
+points <- read.csv("Desktop/final_geocode_results_Feb7.csv")
+
+# convert geometry column to separate lat/long columns
+points_df_clean <- points %>%
+  dplyr::mutate(
+    geometry = str_remove_all(geometry, "c\\(|\\)"),   # remove c( and )
+  ) %>%
+  separate(geometry, into = c("lon", "lat"), sep = ", ") %>%
+  mutate(
+    lon = as.numeric(lon),
+    lat = as.numeric(lat)
+  )
+
+# convert to sf
+points_sf <- st_as_sf(points_df_clean,
+                      coords = c("lon", "lat"),
+                      crs = 4326)
+
+# project to match gemeinden geojson
+points_sf <- st_transform(points_sf, st_crs(dat))
+
 # =========================
 # MAP 1: Bivariate choropleth
 # Sales per capita × Population
@@ -60,7 +84,14 @@ dat_bi1 <- dat_core %>%
 
 p_bi1 <- ggplot(dat_bi1) +
   geom_sf(aes(fill = bi_class), color = NA) +
-  bi_scale_fill(pal = "DkBlue", dim = 3) +
+  bi_scale_fill(pal = "PurpleOr", dim = 3) +
+  # geom_sf(data = points_sf,
+  #         shape = 21,
+  #         fill = "red",
+  #         color = "red",
+  #         size = .5,
+  #         stroke = 0.3,
+  #         alpha = 0.9) +
   theme_minimal() +
   theme(axis.title = element_blank(),
         axis.text  = element_blank(),
@@ -78,12 +109,15 @@ p_bi1
 leg_bi1 <- bi_legend(
   pal = "DkBlue",
   dim = 3,
-  xlab = "Higher population →",
-  ylab = "Higher sales per capita →",
-  size = 8
+  xlab = "Population →",
+  ylab = "Sales per Capita →",
+  size = 6
 )
 
 p_bi1 + leg_bi1
+
+# Bivariate Map 1 + legend
+(p_bi1 | wrap_elements(full = leg_bi1)) + plot_layout(widths = c(6, 1))
 
 # =========================
 # MAP 2: Bivariate choropleth
@@ -107,6 +141,13 @@ dat_bi2 <- dat %>%
 p_bi2 <- ggplot(dat_bi2) +
   geom_sf(aes(fill = bi_class), color = NA) +
   bi_scale_fill(pal = "BlueOr", dim = 3) +
+  geom_sf(data = points_sf,
+          shape = 21,
+          fill = "white",
+          color = "white",
+          size = .5,
+          stroke = 0.3,
+          alpha = 0.9) +
   theme_minimal() +
   theme(axis.title = element_blank(),
         axis.text  = element_blank(),
@@ -207,8 +248,7 @@ p_housing <- ggplot(housing_long) +
 # =========================
 # Display outputs
 # =========================
-# Bivariate Map 1 + legend
-(p_bi1 | wrap_elements(full = leg_bi1)) + plot_layout(widths = c(4, 1))
+
 
 # Bivariate Map 2 + legend
 (p_bi2 | wrap_elements(full = leg_bi2)) + plot_layout(widths = c(4, 1))
@@ -232,6 +272,13 @@ gem_bi1 <- gem_complete %>%
 p_bi1 <- ggplot(gem_bi1) +
   geom_sf(aes(fill = bi_class), color = NA) +
   bi_scale_fill(pal = "DkBlue", dim = n_class) +
+  geom_sf(data = points_sf,
+          shape = 21,
+          fill = "white",
+          color = "white",
+          size = .25,
+          stroke = 0.3,
+          alpha = 0.9) +
   bi_theme() +
   guides(fill = "none") + 
   labs(
@@ -243,14 +290,14 @@ p_bi1 <- ggplot(gem_bi1) +
 leg_bi1 <- bi_legend(
   pal  = "DkBlue",
   dim  = n_class,
-  xlab = "Higher total_pop →",
-  ylab = "Higher income →",
-  size = 9
+  xlab = "Total_pop →",
+  ylab = "Income →",
+  size = 4
 )
 
 # ---- Patchwork layout (your format) ----
 (p_bi1 | wrap_elements(full = leg_bi1)) +
-  plot_layout(widths = c(4, 1))
+  plot_layout(widths = c(6, 1))
 
 
 ### Bivariate total population vs. 2_floor_buildings
