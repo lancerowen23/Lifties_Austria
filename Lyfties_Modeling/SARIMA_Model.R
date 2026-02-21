@@ -3,6 +3,7 @@
 library(dplyr)
 library(lubridate)
 library(forecast)
+library()
 
 ### Creating monthly installs table from geocoded results (CONFIDENTIAL)
 ## RESULT TABLE ADDED TO GITHUB AND REFERENCED IN LINE 30.
@@ -40,6 +41,33 @@ sales_ts <- ts(
 )
 
 plot(sales_ts, main = "Monthly Address Sales (Austria)")
+
+# Nicer looking plot
+
+# Ensure year_month is Date (adjust format if needed)
+df_monthly$year_month <- as.Date(df_monthly$year_month)
+
+# If it's stored like "2023-01" use instead:
+# df_monthly$year_month <- ym(df_monthly$year_month)
+
+# Plot
+ggplot(df_monthly, aes(x = year_month, y = sales)) +
+  geom_line(size = .5) +
+  geom_point(size = 1) +
+  labs(
+    title = "Monthly Installations in Austria",
+    x = NULL,
+    y = "Installations"
+  ) +
+  scale_x_date(date_breaks = "3 months", date_labels = "%b %Y") +
+  scale_y_continuous(
+    limits = c(0, 100),
+    expand = c(0, 0)) +
+  theme_minimal(base_size = 20) +
+  theme(
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    panel.grid.minor = element_blank()
+  )
 
 # fit SARIMA and check summary/residuals
 
@@ -137,3 +165,63 @@ p_combo_inset <- ggdraw(p_main) +
 
 p_combo_inset
 
+### Create plot with legand for buffers and forecast line
+# Convert forecast object to dataframe
+fc_df <- as.data.frame(fc)
+
+# Extract historical data
+hist_df <- data.frame(
+  date = as.Date(time(sales_ts)),
+  value = as.numeric(sales_ts)
+)
+
+# Forecast dataframe
+fc_df$date <- as.Date(time(fc$mean))
+
+ggplot() +
+  
+  # Historical
+  geom_line(data = hist_df,
+            aes(x = date, y = value, color = "Observed"),
+            linewidth = 1) +
+  
+  # Forecast interval
+  geom_ribbon(data = fc_df,
+              aes(x = date,
+                  ymin = `Lo 95`,
+                  ymax = `Hi 95`,
+                  fill = "95% Forecast Interval"),
+              alpha = 0.2) +
+  
+  # Forecast mean
+  geom_line(data = fc_df,
+            aes(x = date, y = `Point Forecast`,
+                color = "Forecast"),
+            linewidth = 1.2) +
+  
+  scale_color_manual(
+    name = NULL,
+    values = c("Observed" = "black",
+               "Forecast" = "blue")
+  ) +
+  
+  scale_fill_manual(
+    name = NULL,
+    values = c("95% Forecast Interval" = "blue")
+  ) +
+  
+  labs(
+    title = "Monthly Installations: Observed and 12-Month Forecast",
+    subtitle = "Model: ARIMA(2,1,1) with drift",
+    x = NULL,
+    y = "Installations"
+  ) +
+  
+  scale_y_continuous(limits = c(0, NA), expand = c(0, 0)) +
+  
+  theme_minimal(base_size = 15) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.minor = element_blank(),
+    legend.position = "bottom"
+  )
