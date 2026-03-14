@@ -1,17 +1,4 @@
-### Script 3: Geocoding Addresses for Customer Analysis
-
-### This script takes the company data (three csv files with addresses for each
-### Lift installation and the month of installation for 2022, 2023, and 2024) and 
-### geocodes each address using the HERE geocoding service to produce a lat/long
-### point for each location. Those location points are then aggregated to gemeinden
-### level to anonymize them and to allows them to be analyzed vis-a-vis the gemeinden-level
-### demographic and housing data. 
-
-#NOTE: THIS SCRIPT CANNOT BE RUN WITHOUT THE API KEY FOR THE HERE GEOCODING SERVICE.
-#NOTE: THIS SCRIPT GEOCODES ADDRESSESS FROM THREE CSVs THAT CANNOT BE SHARED AND ARE CONFIDNETIAL
-# ACCORDING TO AN NDA WITH LIFTA AG. THE POINT-LEVEL OUTPUT OF THIS SCRIPT IS ALSO NOT SHAREABLE 
-# DUE TO THE CONFIDENTIAL NATURE OF THE POINT LEVEL DATA, WHICH WOULD ALLOW FOR THE SPECIFIC IDENTIFICAOTIN
-# OF HOUSEHOLDS. ONLY THE AGGREGATED DATA IS AVAILABLE (AND IS THE END RESULT OF RUNNING THIS SCRIPT).
+### Geocoding Addresses for Customer Analysis
 
 ## Author: Lance R. Owen 
 

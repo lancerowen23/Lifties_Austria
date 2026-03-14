@@ -84,7 +84,7 @@ dat_bi1 <- dat_core %>%
 
 p_bi1 <- ggplot(dat_bi1) +
   geom_sf(aes(fill = bi_class), color = NA) +
-  bi_scale_fill(pal = "PurpleOr", dim = 3) +
+  bi_scale_fill(pal = "BlueGold", dim = 3) +
   # geom_sf(data = points_sf,
   #         shape = 21,
   #         fill = "red",
@@ -107,7 +107,7 @@ p_bi1 <- ggplot(dat_bi1) +
 p_bi1
 
 leg_bi1 <- bi_legend(
-  pal = "DkBlue",
+  pal = "BlueGold",
   dim = 3,
   xlab = "Population →",
   ylab = "Sales per Capita →",
@@ -141,13 +141,13 @@ dat_bi2 <- dat %>%
 p_bi2 <- ggplot(dat_bi2) +
   geom_sf(aes(fill = bi_class), color = NA) +
   bi_scale_fill(pal = "BlueOr", dim = 3) +
-  geom_sf(data = points_sf,
-          shape = 21,
-          fill = "white",
-          color = "white",
-          size = .5,
-          stroke = 0.3,
-          alpha = 0.9) +
+  # geom_sf(data = points_sf,
+  #         shape = 21,
+  #         fill = "white",
+  #         color = "white",
+  #         size = .25,
+  #         stroke = 0.3,
+  #         alpha = 0.9) +
   theme_minimal() +
   theme(axis.title = element_blank(),
         axis.text  = element_blank(),
@@ -165,9 +165,11 @@ leg_bi2 <- bi_legend(
   pal = "BlueOr",
   dim = 3,
   xlab = "Higher % 75+ →",
-  ylab = "Higher sales per capita →",
+  ylab = "Installs per Cap →",
   size = 8
 )
+
+(p_bi2 | wrap_elements(full = leg_bi2)) + plot_layout(widths = c(6, 1))
 
 # =========================
 # MAP 3: Residual (over/under-performance) map
@@ -274,8 +276,8 @@ p_bi1 <- ggplot(gem_bi1) +
   bi_scale_fill(pal = "DkBlue", dim = n_class) +
   geom_sf(data = points_sf,
           shape = 21,
-          fill = "white",
-          color = "white",
+          fill = "black",
+          color = "black",
           size = .25,
           stroke = 0.3,
           alpha = 0.9) +
@@ -290,9 +292,9 @@ p_bi1 <- ggplot(gem_bi1) +
 leg_bi1 <- bi_legend(
   pal  = "DkBlue",
   dim  = n_class,
-  xlab = "Total_pop →",
+  xlab = "Population →",
   ylab = "Income →",
-  size = 4
+  size = 6
 )
 
 # ---- Patchwork layout (your format) ----
@@ -311,7 +313,14 @@ gem_bi2 <- gem_complete %>%
 # ---- Map ----
 p_bi2 <- ggplot(gem_bi2) +
   geom_sf(aes(fill = bi_class), color = NA) +
-  bi_scale_fill(pal = "GrPink", dim = n_class) +
+  bi_scale_fill(pal = "DkBlue", dim = n_class) +
+  geom_sf(data = points_sf,
+          shape = 21,
+          fill = "black",
+          color = "black",
+          size = .25,
+          stroke = 0.3,
+          alpha = 0.9) +
   bi_theme() +
   guides(fill = "none") + 
   labs(
@@ -321,13 +330,139 @@ p_bi2 <- ggplot(gem_bi2) +
 
 # ---- Legend ----
 leg_bi2 <- bi_legend(
-  pal  = "GrPink",
+  pal  = "DkBlue",
   dim  = n_class,
-  xlab = "Higher total_pop →",
-  ylab = "Higher % two-story blgs. →",
-  size = 9
+  xlab = "Population →",
+  ylab = "% 2-Floors →",
+  size = 6
 )
 
 # ---- Patchwork layout (your format) ----
 (p_bi2 | wrap_elements(full = leg_bi2)) +
-  plot_layout(widths = c(4, 1))
+  plot_layout(widths = c(6, 1))
+
+
+# =========================
+# MAP 1: Bivariate choropleth
+# Sales per capita × Population
+# =========================
+set.seed(1)
+
+dat_bi1 <- dat_core %>%
+  mutate(
+    total_pop_j = jitter(total_pop, factor = 1e-6),
+    sales_pc_j  = jitter(sales_pc,  factor = 1e-6)
+  ) %>%
+  bi_class(
+    x = total_pop_j,
+    y = sales_pc_j,
+    style = "quantile",
+    dim = 3
+  )
+
+p_bi1 <- ggplot(dat_bi1) +
+  geom_sf(aes(fill = bi_class), color = NA) +
+  bi_scale_fill(pal = "BlueGold", dim = 3) +
+  # geom_sf(data = points_sf,
+  #         shape = 21,
+  #         fill = "red",
+  #         color = "red",
+  #         size = .5,
+  #         stroke = 0.3,
+  #         alpha = 0.9) +
+  theme_minimal() +
+  theme(axis.title = element_blank(),
+        axis.text  = element_blank(),
+        axis.ticks = element_blank(),
+    legend.position = "none",
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Bivariate: Population × Sales per Capita",
+    subtitle = "Gemeinden",
+    x = NULL, y = NULL
+  )
+p_bi1
+
+leg_bi1 <- bi_legend(
+  pal = "BlueGold",
+  dim = 3,
+  xlab = "Population →",
+  ylab = "Sales per Capita →",
+  size = 6
+)
+
+p_bi1 + leg_bi1
+
+# Bivariate Map 1 + legend
+(p_bi1 | wrap_elements(full = leg_bi1)) + plot_layout(widths = c(6, 1))
+
+
+# =========================
+# MAP 2: Bivariate choropleth
+# percent_2floor × income
+# (same structure as your Map 1)
+# =========================
+
+library(dplyr)
+library(sf)
+library(ggplot2)
+library(biscale)
+library(patchwork)
+
+set.seed(1)
+
+# dat_core must be an sf with fields: percent_2floor, income
+# If percent_2floor is in 0–100 already, leave as-is.
+# If it’s 0–1, uncomment the *100 line below.
+
+dat_bi3 <- dat_core %>%
+  mutate(
+    pct2f = as.numeric(percent_2floor),
+    inc   = as.numeric(income)
+    
+    # If percent_2floor is a proportion (0–1), use:
+    # pct2f = as.numeric(percent_2floor) * 100
+  ) %>%
+  filter(is.finite(pct2f), is.finite(inc)) %>%
+  mutate(
+    pct2f_j = jitter(pct2f, factor = 1e-6),
+    inc_j   = jitter(inc,   factor = 1e-6)
+  ) %>%
+  bi_class(
+    x = inc_j,
+    y = pct2f_j,
+    style = "quantile",
+    dim = 3
+  )
+
+p_bi3 <- ggplot(dat_bi3) +
+  geom_sf(aes(fill = bi_class), color = NA) +
+  bi_scale_fill(pal = "BlueGold", dim = 3) +
+  theme_minimal() +
+  theme(
+    axis.title = element_blank(),
+    axis.text  = element_blank(),
+    axis.ticks = element_blank(),
+    legend.position = "none",
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Bivariate: Income × % Two-Floor Buildings",
+    subtitle = "Gemeinden",
+    x = NULL, y = NULL
+  )
+
+leg_bi3 <- bi_legend(
+  pal = "BlueGold",
+  dim = 3,
+  xlab = "Income →",
+  ylab = "% Two-Floor →",
+  size = 6
+)
+
+# View map alone
+p_bi3
+
+# View map + legend combined
+(p_bi3 | wrap_elements(full = leg_bi3)) + plot_layout(widths = c(6, 1))

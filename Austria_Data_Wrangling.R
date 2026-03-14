@@ -12,6 +12,13 @@ library(readr)
 library(sf)
 library(dplyr)
 
+#Gemeinden GEOJSON load
+gemeinde <- st_read("Desktop/Lifties_Austria/austria_gemeinden_simplified.geojson", quiet = FALSE)   
+
+#Bezirke GEOJSON load
+bezirke <- st_read("Desktop/Lifties_Austria/austria_bezirke_simplified.geojson", quiet = FALSE)   
+
+
 #Pop Files Import
 
 #total population

@@ -3,7 +3,10 @@
 library(dplyr)
 library(lubridate)
 library(forecast)
-library()
+library(patchwork)
+library(ggplot2)
+library(zoo)
+
 
 ### Creating monthly installs table from geocoded results (CONFIDENTIAL)
 ## RESULT TABLE ADDED TO GITHUB AND REFERENCED IN LINE 30.
